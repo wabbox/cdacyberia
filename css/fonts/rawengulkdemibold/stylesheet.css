@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'rawengulkdemibold';
+	src: url('rawengulkdemibold.eot');
+	src: url('rawengulkdemibold.eot?#iefix') format('embedded-opentype'),
+		url('rawengulkdemibold.woff') format('woff'),
+		url('rawengulkdemibold.ttf') format('truetype'),
+		url('rawengulkdemibold.svg') format('svg');
+}
