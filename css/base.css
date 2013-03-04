@@ -35,12 +35,15 @@ body {
 }
 
 header, footer, nav ul, #content {
-	width: 1024px;
+	width: 89%;
 	margin: 0 auto;
 	padding: 0 40px;
 }
 
 /* background*/
+.header-bg, .footer-bg {
+	/* position: relative; */
+}
 .header-bg {
 	background: url(../images/background/header.jpg) no-repeat left top;
 }
@@ -105,7 +108,7 @@ nav ul li a {
 	color: #FFF;
 	text-decoration: none;
 	display: block;
-	padding: 20px 20px 20px 0;
+	padding: 20px 15px 20px 0;
 	font-family: rawengulkdemibold, Helvetica, Arial, sans-serif;
 	text-shadow:2px 1px 2px #00446D
 }
@@ -121,7 +124,7 @@ nav ul {
 }
 /* Style footer */
 footer {
-	height: 140px;
+	/* height: 140px; */
 	/* clear: both; */
 }
 footer ul {
@@ -132,7 +135,6 @@ footer section {
 	margin: 10px 0;
 	padding: 0 15px;
 	border-left: 1px solid #C5C5C5;
-	height: 110px;
 	font: 500 0.8em Verdana, Geneva, sans-serif;
 	line-height: 1.6em !important;
 }
@@ -143,25 +145,54 @@ footer a {
 footer a:hover {
 	color: #4B4B4B;
 }
-#service {
-	width: 190px;
+/* #service {
+	width: 15%;
 }
 #information {
-	width: 145px;
-}
-#description, #raison-social {
-	width: 267px;
+	width: 15%;
+} 
+
+ #raison-social {
+	width: 25%;
+}*/
+#description {
+	width: 30%;
 }
 #raison-social {
 	border-right: 1px solid #C5C5C5;
+	margin-right: 10px;
+	float: right;
 }
 
 /* largeur media*/
-
-@media only screen and (max-width: 800px) {
-	header, footer, nav ul, #content {
-	width: 100%;
+@media only screen and (max-width: 980px) {
+	body {
+		width: 980px;
 	}
+	nav ul li a {
+		font-size: 0.80em;
+	}
+	#description {
+	width: 28%;
+	}
+}
+@media only screen and (max-width: 800px) {
+	body {
+		width: 100%;
+	}
+	.header-bg {
+	background: url(../images/background/header-bg.jpg) no-repeat left top;
+	}
+	.footer-bg {
+		background: url(../images/background/footer-bg.jpg) no-repeat left top;
+	}
+	.carousel {
+		width: 450px;
+	}
+	header, footer, nav ul, #content {
+		width: 80%;
+	}
+
 	nav {
 		height: auto;
 		background: rgb(30,87,153); /* Old browsers */
@@ -179,6 +210,7 @@ footer a:hover {
 
 	}
 	nav ul {
+		width: 100%;
 		padding: 0;
 	}
 	nav ul li {
@@ -186,6 +218,7 @@ footer a:hover {
 	}
 	nav ul li a {
 		padding: 10px 40px;
+		font-size: 1em;
 	}
 	nav ul li a:hover {
 		background: rgb(30,87,153);
@@ -193,9 +226,16 @@ footer a:hover {
 	footer section {
 		width: 100% !important;
 		height: auto !important;
-		border: none;
+		border: none !important;
+		float: left !important;
 	}
 }
-@media only screen and (max-width: 340px) {
-
+@media only screen and (max-width: 480px) {
+	.vcard {
+		margin-top: 30px !important;
+	}
+	header h1 {
+		margin-bottom: 0 !important; 
+	}
+}
 } 
