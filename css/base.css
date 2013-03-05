@@ -29,11 +29,26 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.5em !important;
 	background: url(../images/background/body.jpg) no-repeat center bottom;
 	font: 16px rawengulkbold, Helvetica, Arial, sans-serif;
 }
-
+h1, h2, h3 {
+	color: #006EAE;
+}
+h1 {
+	font-size: 1.5em;
+}
+h2 {
+	font-size: 1.4em;
+	padding: 10px 0;
+}
+h3 {
+	font-size: 1.3em;
+}
+h4 {
+	font-size: 1.1em;
+}
 header, footer, nav ul, #content {
 	width: 89%;
 	margin: 0 auto;
@@ -79,7 +94,7 @@ header .vcard {
 	text-decoration: none;
 	color: #000;
 }
-header h1 {
+.logo h1 {
 	text-indent: -9999px;
 	height: 160px;
 	width: 180px;

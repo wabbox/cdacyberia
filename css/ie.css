@@ -1,3 +1,4 @@
-header, footer, nav ul, #content {
+body {
 	width: 1024px;
+	width: 1024px !important;
 }

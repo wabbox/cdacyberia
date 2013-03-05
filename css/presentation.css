@@ -1,0 +1,78 @@
+.presentation {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+.presentation article {
+	float: left;
+	width: 50%;
+	background-color: #45C53F;
+}
+.presentation p {
+	padding: 10px 0;
+}
+.logo-cda, .logo-cas {
+	display: block;
+	text-indent: -9999px;margin: 0 30px;
+}
+.logo-cda {
+	width: 153px;
+	height: 134px;
+	background: url(../images/picto-presentation/logo-cda.png) no-repeat;
+	float: left;
+	
+}
+.logo-cas {
+	width: 202px;
+	height: 99px;
+	background: url(../images/picto-presentation/logo-cas.png) no-repeat;
+	float: right;
+	margin-top: 34px;
+}
+#produit {
+	margin: 30px 0;
+}
+#produit h2, #produit h4{
+	display: inline;
+}
+.produit2, .produit1 {
+	background-color: #8A32A0;
+	width: 50%;
+}
+.produit1 {
+	float: left;	
+}
+.produit1 article{
+	padding:10px 10px 10px 100px;
+}
+.produit2 {
+	margin-left: 50%;	
+}
+.produit2 h2, .produit2 h4 {
+	margin-top: 30px;	
+}
+.produit2 article{
+	padding:0 0 0 100px;
+	min-height: 100px;
+}
+.e_assur {
+	background: url(../images/picto-presentation/e_assur.png) no-repeat left center;
+}
+.finances_top {
+	background: url(../images/picto-presentation/finances_top.png) no-repeat left center;
+}
+.e_risk {
+	background: url(../images/picto-presentation/e_risk.png) no-repeat left center;
+}
+.e_care {
+	background: url(../images/picto-presentation/e_care.png) no-repeat left center;
+}
+.creasite {
+	background: url(../images/picto-presentation/creasite.png) no-repeat left center;
+}
+.hebergement {
+	background: url(../images/picto-presentation/hebergement.png) no-repeat left center;
+}
+.conseil {
+	background: url(../images/picto-presentation/conseil.png) no-repeat left center;
+}
