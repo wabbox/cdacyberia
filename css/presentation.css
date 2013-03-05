@@ -50,6 +50,9 @@
 .produit2 {
 	margin-left: 50%;	
 }
+.produit2 div {
+	margin-top: 40px;	
+}
 .produit2 h2, .produit2 h4 {
 	padding-top: 30px;	
 }
@@ -106,7 +109,7 @@
 @media only screen and (max-width: 800px) {
 	.logo-cda, .logo-cas {
 		float: right;
-		margin-left: 30px;
+		margin: 0 30px 30px 0;
 	}
 	.produit2, .produit1 {
 	width: 100%;
@@ -115,5 +118,29 @@
 	}
 	#produit article {
 		padding:10px 30px 10px 100px;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.presentation > article {
+		width: 100%;
+	}
+	.logo-presentation {
+		visibility: hidden;
+		width: 0;
+		height: 0;
+	}
+	#produit article {
+		padding: 10px;
+		background: none;
+	}
+	#produit article h4 {
+		margin-bottom: 30px;
+	}
+	.produit2 div {
+		margin: 0;
+	}
+	.produit2 article{
+		height: auto;
+		min-height: auto;
 	}
 }

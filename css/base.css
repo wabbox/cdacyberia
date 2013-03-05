@@ -131,6 +131,9 @@ nav ul {
 	padding-bottom: 40px;
 }
 /* Style footer */
+footer {
+	padding: 20px 0;
+}
 footer ul {
 	list-style: none;
 }
