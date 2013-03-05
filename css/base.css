@@ -45,6 +45,7 @@ h2 {
 }
 h3 {
 	font-size: 1.3em;
+	padding: 8px 0;
 }
 h4 {
 	font-size: 1.1em;
@@ -56,28 +57,21 @@ header, footer, nav ul, #content {
 }
 
 /* background*/
-.header-bg, .footer-bg {
-	/* position: relative; */
-}
 .header-bg {
 	background: url(../images/background/header.jpg) no-repeat left top;
 }
 .footer-bg {
 	background: url(../images/background/footer.jpg) no-repeat left top;
 }
-
 .clear {
 	clear: both;
 }
-
 a {
 	color: #3573B4;
 }
-
 a:hover {
 	color: #224971;
 }
-
 
 /* Style header */
 header .vcard {
@@ -104,7 +98,6 @@ header .vcard {
 	margin: 20px 0;
 }
 nav {
-	/* clear: both; */
 	height: 50px;
 	background: rgb(53,115,180);
 	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwJSIgc3RvcC1jb2xvcj0iIzM1NzNiNCIgc3RvcC1vcGFjaXR5PSIwLjM0Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjI5JSIgc3RvcC1jb2xvcj0iIzM1NzNiNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMxJSIgc3RvcC1jb2xvcj0iIzM1NzNiNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzNTczYjQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -138,10 +131,6 @@ nav ul {
 	padding-bottom: 40px;
 }
 /* Style footer */
-footer {
-	/* height: 140px; */
-	/* clear: both; */
-}
 footer ul {
 	list-style: none;
 }
@@ -160,16 +149,6 @@ footer a {
 footer a:hover {
 	color: #4B4B4B;
 }
-/* #service {
-	width: 15%;
-}
-#information {
-	width: 15%;
-} 
-
- #raison-social {
-	width: 25%;
-}*/
 #description {
 	width: 30%;
 }
@@ -188,7 +167,7 @@ footer a:hover {
 		font-size: 0.80em;
 	}
 	#description {
-	width: 28%;
+		width: 28%;
 	}
 }
 @media only screen and (max-width: 800px) {
@@ -196,7 +175,7 @@ footer a:hover {
 		width: 100%;
 	}
 	.header-bg {
-	background: url(../images/background/header-bg.jpg) no-repeat left top;
+		background: url(../images/background/header-bg.jpg) no-repeat left top;
 	}
 	.footer-bg {
 		background: url(../images/background/footer-bg.jpg) no-repeat left top;
@@ -253,4 +232,4 @@ footer a:hover {
 		margin-bottom: 0 !important; 
 	}
 }
-} 
+

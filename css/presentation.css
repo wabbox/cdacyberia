@@ -6,21 +6,20 @@
 .presentation article {
 	float: left;
 	width: 50%;
-	background-color: #45C53F;
 }
 .presentation p {
 	padding: 10px 0;
 }
 .logo-cda, .logo-cas {
 	display: block;
-	text-indent: -9999px;margin: 0 30px;
+	text-indent: -9999px;
 }
 .logo-cda {
 	width: 153px;
 	height: 134px;
 	background: url(../images/picto-presentation/logo-cda.png) no-repeat;
 	float: left;
-	
+	margin-left: 30px;	
 }
 .logo-cas {
 	width: 202px;
@@ -28,31 +27,33 @@
 	background: url(../images/picto-presentation/logo-cas.png) no-repeat;
 	float: right;
 	margin-top: 34px;
+	margin-right: 30px;
 }
 #produit {
 	margin: 30px 0;
+}
+.function {
+	color: #006EAE;
 }
 #produit h2, #produit h4{
 	display: inline;
 }
 .produit2, .produit1 {
-	background-color: #8A32A0;
 	width: 50%;
 }
 .produit1 {
 	float: left;	
 }
-.produit1 article{
-	padding:10px 10px 10px 100px;
+#produit article{
+	padding:10px 30px 10px 100px;
 }
 .produit2 {
 	margin-left: 50%;	
 }
 .produit2 h2, .produit2 h4 {
-	margin-top: 30px;	
+	padding-top: 30px;	
 }
 .produit2 article{
-	padding:0 0 0 100px;
 	min-height: 100px;
 }
 .e_assur {
@@ -75,4 +76,44 @@
 }
 .conseil {
 	background: url(../images/picto-presentation/conseil.png) no-repeat left center;
+}
+#common-function p {
+	margin: 12px 0;
+}
+/* padding background box-shadow border-radius */
+#produit, #common-function {
+	padding: 20px;
+	border-radius: 11px;
+	-webkit-border-radius: 11px;
+	-moz-border-radius: 11px;
+
+	box-shadow: 0px 2px 13px rgba(0, 121, 187, 0.7);
+	-moz-box-shadow: 0px 2px 13px rgba(0, 121, 187, 0.7);
+	-webkit-box-shadow: 0px 2px 13px rgba(0, 121, 187, 0.7);
+
+	background: rgb(219,237,255); /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNkYmVkZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-radial-gradient(left, ellipse cover,  rgb(219,237,255) 0%, rgb(255,255,255) 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, left center, 0px, left center, 100%, color-stop(0%,rgb(219,237,255)), color-stop(100%,rgb(255,255,255))); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(left, ellipse cover,  rgb(219,237,255) 0%,rgb(255,255,255) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(left, ellipse cover,  rgb(219,237,255) 0%,rgb(255,255,255) 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(left, ellipse cover,  rgb(219,237,255) 0%,rgb(255,255,255) 100%); /* IE10+ */
+	background: radial-gradient(ellipse at left,  rgb(219,237,255) 0%,rgb(255,255,255) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbedff', endColorstr='#ffffff',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+
+}
+@media only screen and (max-width: 800px) {
+	.logo-cda, .logo-cas {
+		float: right;
+		margin-left: 30px;
+	}
+	.produit2, .produit1 {
+	width: 100%;
+	float: none;
+	margin: 0;
+	}
+	#produit article {
+		padding:10px 30px 10px 100px;
+	}
 }

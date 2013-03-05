@@ -37,16 +37,13 @@
 
 #push {
 	margin: 0 auto;
-	/* clear: both; */	
 }
 #push article {
 	width: 27.5%;
 	height: 125px;
 	float: left;
-	/* margin: 40px 22px; */
 	margin-top: 40px;
 	margin-bottom: 20px;
-	/* margin-right: 3.33%; */
 	padding: 15px; 
 	line-height: 1.4em;
 	font-size: 0.9em;
@@ -70,84 +67,71 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbedff', endColorstr='#ffffff',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
 
 }
-#push article.last {
-	/* margin-right: 0; */
-	/* float: right; */
+#push article.middle {
+	margin-left: 3.6%;
+	margin-right: 3.5%;
 }
-/* #push article.last, #push article.middle {
+#push h4 {
+	font-size: 1.1em;
+}
+#push h4, #push p {
+	margin-left: 100px;
+}
+.risque,  .logiciel, .documentation {
+	display: block;
+	float: left;
+	height: 100%;
+	width: 95px;
+}
+.risque {
+	background: url(../images/picto-acceuil/tasse.png) no-repeat left center;
+}
+.logiciel {
+	background: url(../images/picto-acceuil/box-cd.png) no-repeat left center;
+}
+.documentation {
+	background: url(../images/picto-acceuil/doc.png) no-repeat left center;
 	margin-right: 0;
-	} */
-	#push article.middle {
-		margin-left: 3.6%;
-		margin-right: 3.5%;
+}
+@media only screen and (max-width: 1024px) {
+	#push article{
+		height: 163px;
 	}
-	#push>article {
-		/* margin-left: 0; */
-		/* margin-right: 3.33%; */
+}
+
+@media only screen and (max-width: 800px) {
+	.carousel {
+		float: none;
+		margin: 0 auto;
+	}
+	#presentation{
+		margin: 30px 0;
+		float: left;
+	}
+	#push article{
+		height: 95px;
+		width: 100%;
+		margin-right: 0 !important;
+		margin-left: 0 !important;
 	}
 	#push h4 {
-		font-size: 1.1em;
+		margin-bottom: 10px;
 	}
 	#push h4, #push p {
-		margin-left: 100px;
+		margin-left: 120px;
 	}
-	.risque,  .logiciel, .documentation {
-		display: block;
-		float: left;
-		height: 100%;
-		width: 95px;
-		/* clear: both; */
+}
+@media only screen and (max-width: 480px) {
+	.carousel {
+		width: 360px !important;
+		height: 211px !important;
 	}
-	.risque {
-		background: url(../images/picto-acceuil/tasse.png) no-repeat left center;
+	.carousel-caption {
+		height: 40px;
+		top: -55px;
 	}
-	.logiciel {
-		background: url(../images/picto-acceuil/box-cd.png) no-repeat left center;
+	.carousel-caption h1 {
+		font-size: 0.9em;
+		line-height: 1.2em;
 	}
-	.documentation {
-		background: url(../images/picto-acceuil/doc.png) no-repeat left center;
-		margin-right: 0;
-	}
-	@media only screen and (max-width: 1024px) {
-		#push article{
-			/* width: 27%; */
-			height: 163px;
-		}
-	}
-
-	@media only screen and (max-width: 800px) {
-		.carousel {
-			float: none;
-			margin: 0 auto;
-		}
-		#presentation{
-			margin: 30px 0;
-			float: left;
-		}
-		#push article{
-			height: 95px;
-			width: 100%;
-			margin-right: 0 !important;
-			margin-left: 0 !important;
-		}
-		#push h4 {
-			margin-bottom: 10px;
-		}
-		#push h4, #push p {
-			margin-left: 120px;
-		}
-	}
-	@media only screen and (max-width: 480px) {
-		.carousel {
-			width: 360px !important;
-			height: 211px !important;
-		}
-		.carousel-caption {
-			height: 40px;
-			top: -55px;
-		}
-		.carousel-caption h1 {
-			font-size: 0.9em;
-			line-height: 1.2em;
-		}
-	}
+}
