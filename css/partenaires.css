@@ -1,90 +1,63 @@
-.presentation {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-}
-.presentation article {
-	float: left;
-	width: 50%;
-}
-.presentation p {
-	padding: 10px 0;
-}
-.logo-cda, .logo-cas {
-	display: block;
-	text-indent: -9999px;
-}
-.logo-cda {
-	width: 153px;
-	height: 134px;
-	background: url(../images/picto-presentation/logo-cda.png) no-repeat;
-	float: left;
-	margin-left: 40px;	
-}
-.logo-cas {
-	width: 202px;
-	height: 99px;
-	background: url(../images/picto-presentation/logo-cas.png) no-repeat;
-	float: right;
-	margin-top: 34px;
-	margin-right: 30px;
-}
-#produit {
+#content section {
 	margin: 30px 0;
 }
-.function {
-	color: #006EAE;
+.a_h2 {
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	padding-right: 7px;
+	float: left;
+	/* font-size: 1.1em; */
 }
-#produit h2, #produit h4{
-	display: inline;
+.picto {
+	display: block;
+	float: left;
 }
-.produit2, .produit1 {
+.partenaire1 .picto {
+	height: 85px;
+	width: 95px;
+}
+.partenaire2 .picto {
+	height: 110px;
+	width: 162px;
+}
+.partenaire1 article {
+	height: 85px;
+	padding: 5px 40px 10px;
+}
+.partenaire1 .a_h2, .partenaire1 p {
+	margin: 15px 0 0;
+}
+.partenaire1, .partenaire2 {
 	width: 50%;
 }
-.produit1 {
-	float: left;	
+.partenaire1 {
+	float: left;
 }
-#produit article{
-	padding:10px 30px 10px 100px;
+.partenaire2 {
+	margin-left: 50%;
 }
-.produit2 {
-	margin-left: 50%;	
+.partenaire2 article {
+	padding: 10px 10px 20px 10px;
 }
-.produit2 div {
-	margin-top: 30px;	
+
+.dddd .picto {
+	background: url(../images/picto-partenaires/4d.png) no-repeat left center;
 }
-.produit2 h2, .produit2 h4 {
-	padding-top: 30px;	
+.CyberiaUtopia .picto {
+	background: url(../images/picto-partenaires/cyberia-utopia.png) no-repeat left center;
 }
-.produit2 article{
-	height: 85px;
+.power .picto {
+	background: url(../images/picto-partenaires/power.png) no-repeat left center;
 }
-.e_assur {
-	background: url(../images/picto-presentation/e_assur.png) no-repeat left center;
+.MaisonDance .picto {
+	background: url(../images/picto-partenaires/maison-danse.png) no-repeat center center;
 }
-.finances_top {
-	background: url(../images/picto-presentation/finances_top.png) no-repeat left center;
+.CAS .picto {
+	background: url(../images/picto-partenaires/cas.png) no-repeat center center;
 }
-.e_risk {
-	background: url(../images/picto-presentation/e_risk.png) no-repeat left center;
-}
-.e_care {
-	background: url(../images/picto-presentation/e_care.png) no-repeat left center;
-}
-.creasite {
-	background: url(../images/picto-presentation/creasite.png) no-repeat left center;
-}
-.hebergement {
-	background: url(../images/picto-presentation/hebergement.png) no-repeat left center;
-}
-.conseil {
-	background: url(../images/picto-presentation/conseil.png) no-repeat left center;
-}
-#common-function p {
-	margin: 12px 0;
-}
-/* padding background box-shadow border-radius */
-#produit, #common-function {
+
+#content section {
 	padding: 20px;
 	border-radius: 11px;
 	-webkit-border-radius: 11px;
@@ -107,40 +80,23 @@
 
 }
 @media only screen and (max-width: 800px) {
-	.logo-cda, .logo-cas {
-		float: right;
-		margin: 0 30px 30px 0;
-	}
-	.produit2, .produit1 {
+	.partenaire1, .partenaire2 {
 	width: 100%;
 	float: none;
 	margin: 0;
 	}
-	#produit article {
-		padding:10px 30px 10px 100px;
-	}
 }
 @media only screen and (max-width: 480px) {
-	.presentation > article {
-		width: 100%;
-	}
-	.logo-presentation {
+	.picto {
 		visibility: hidden;
-		width: 0;
-		height: 0;
+		width: 0 !important;
+		height: 0 !important;
 	}
-	#produit article {
+	.a_h2, #content p {
+
+	}
+	#content article {
 		padding: 10px;
-		background: none;
-	}
-	#produit article h4 {
-		margin-bottom: 30px;
-	}
-	.produit2 div {
-		margin: 0;
-	}
-	.produit2 article{
 		height: auto;
-		min-height: auto;
 	}
 }
