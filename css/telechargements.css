@@ -18,14 +18,23 @@
 	font-size: 1.4em;
 	text-align: center;
 }
-#link_pc {
+.link_pc {
 	background: url(../images/picto-telechargements/pc_blur.png) no-repeat top center;
 }
-#link_mac {
+.link_mac {
 	background: url(../images/picto-telechargements/mac_blur.png) no-repeat top center;
 }
-#link_dddd {
+.link_dddd {
 	background: url(../images/picto-telechargements/4d_blur.png) no-repeat top center;
+}
+.link_pc_focus {
+	background: url(../images/picto-telechargements/pc_focus.png) no-repeat top center;
+}
+.link_mac_focus {
+	background: url(../images/picto-telechargements/mac_focus.png) no-repeat top center;
+}
+.link_dddd_focus {
+	background: url(../images/picto-telechargements/4d_focus.png) no-repeat top center;
 }
 #telechargement {
 	margin: 30px 0;
