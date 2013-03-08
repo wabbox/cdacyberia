@@ -1,9 +1,3 @@
-/*$(document).ready(function() {
-	$('#link_pc').click(function(){
-		alert("clic");
-	}
-}*/
-
 $(document).ready(function(){
 	$('#windows').slideDown();
 	$('#mac').hide();
