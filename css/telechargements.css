@@ -18,23 +18,45 @@
 	font-size: 1.4em;
 	text-align: center;
 }
-.link_pc {
-	background: url(../images/picto-telechargements/pc_blur.png) no-repeat top center;
+.listeDl a {
+	display: block;
+	padding-left: 25px;
+	text-decoration: none;
+	font-size: 1.2em;
+	background: url(../images/picto/dl.png) no-repeat 0% 25%;
+}
+.droite {
+	width: 50%;
+	margin-left: 50%;
+	/* float: right; */
+}
+.gauche {
+	width: 50%;
+	float: left;
+}
+#avertissement span {
+	color: #576EBF;
+}
+#windows, #mac, #dddd {
+	margin: 30px 60px;
+}
+.link_windows {
+	background: url(../images/picto-telechargements/windows_blur.png) no-repeat top center;
 }
 .link_mac {
 	background: url(../images/picto-telechargements/mac_blur.png) no-repeat top center;
 }
 .link_dddd {
-	background: url(../images/picto-telechargements/4d_blur.png) no-repeat top center;
+	background: url(../images/picto-telechargements/dddd_blur.png) no-repeat top center;
 }
-.link_pc_focus {
-	background: url(../images/picto-telechargements/pc_focus.png) no-repeat top center;
+.link_windows_focus {
+	background: url(../images/picto-telechargements/windows_focus.png) no-repeat top center;
 }
 .link_mac_focus {
 	background: url(../images/picto-telechargements/mac_focus.png) no-repeat top center;
 }
 .link_dddd_focus {
-	background: url(../images/picto-telechargements/4d_focus.png) no-repeat top center;
+	background: url(../images/picto-telechargements/dddd_focus.png) no-repeat top center;
 }
 #telechargement {
 	margin: 30px 0;
@@ -43,9 +65,9 @@
 	-webkit-border-radius: 11px;
 	-moz-border-radius: 11px;
 
-	box-shadow: 0px 2px 13px rgba(0, 121, 187, 0.7);
-	-moz-box-shadow: 0px 2px 13px rgba(0, 121, 187, 0.7);
-	-webkit-box-shadow: 0px 2px 13px rgba(0, 121, 187, 0.7);
+	box-shadow: 0px 2px 13px rgba(53, 115, 180, 0.7);
+	-moz-box-shadow: 0px 2px 13px rgba(53, 115, 180, 0.7);
+	-webkit-box-shadow: 0px 2px 13px rgba(53, 115, 180, 0.7);
 
 	background: rgb(219,237,255); /* Old browsers */
 	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
