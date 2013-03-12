@@ -14,7 +14,7 @@
   <!-- Included CSS général -->
   <link rel="stylesheet" href="css/base.css" media="all">
   <!-- Included CSS spécifique à la page -->
-  <link rel="stylesheet" href="css/acceuil.css" media="all">  
+  <link rel="stylesheet" href="css/contact.css" media="all">  
   <!--[if lte IE 8]>
     <link rel="stylesheet" href="css/ie.css" />
     <![endif]-->
@@ -55,7 +55,65 @@
     </div>
     <!-- content -->
     <div id="content">
-      <h2>En cours de réalisation</h2>
+      <header>
+        <h3>Contactez nous</h3>
+        <p>Remplissez le formulaire ci-dessous pour nous contacter, nous vous répondrons dans les plus brefs délais.</p>
+      </header>
+      <section id="form">
+        <form action="form.php">
+          <div class="gauche">
+            <p>
+              <label for="nom">Nom : <span class="form-required" title="Ce champ est obligatoire.">*</span></label>
+              <input type="text" name="nom" id="nom">
+            </p>  
+            <span class="tooltip">Entrez votre nom </span>
+            <p>
+              <label for="prenom">Prénom : <span class="form-required" title="Ce champ est obligatoire.">*</span></label>
+              <input type="text" name="prenom" id="prenom">
+            </p>
+            <span class="tooltip">Entrez votre prénom</span>
+            <p>
+              <label for="societe">Société :</label>
+              <input type="text" name="societe" id="societe">
+            </p>
+            <p>
+              <label for="adresse">Adresse :</label>
+              <textarea name="adresse" id="adresse" cols="30" rows="4"></textarea>
+            </p>
+            <p>
+              <label for="telephone">Téléphone :</label>
+              <input type="text" name="telephone" id="telephone">
+            </p>
+            <p>
+              <label for="email">E-mail : <span class="form-required" title="Ce champ est obligatoire.">*</span></label>
+              <input type="text" name="email" id="email">
+            </p>
+            <span class="tooltip">Entrez votre e-mail</span>
+          </div>
+          <div class="droite">
+            <p>
+              <label for="object">Objet :</label>
+              <select name="object" id="object">
+                <option value="">Demande d'informations</option>
+                <option value="">Demande de démonstration</option>
+                <option value="">Demande de devis</option>
+                <option value="">Demande de rendez-vous</option>
+                <option value="">Autres</option>
+              </select>
+            </p>
+            <p>
+              <label for="message">Message : <span class="form-required" title="Ce champ est obligatoire.">*</span></label>
+              <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </p>
+            <span class="tooltip">Entrez un message</span>
+            <p>
+              <input type="submit" value="Envoyer" id="envoyer" name="envoi"/>
+              <input type="reset" value="Effacer" />
+            </p>
+          </div>
+          <br class="clear">
+        </form>
+      </section>
     </div>
     <!-- footer -->
     <div class="footer-bg">

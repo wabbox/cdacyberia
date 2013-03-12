@@ -1,4 +1,8 @@
-$(document).ready(function(){	
+$(document).ready(function(){
+	//redimensionement de content sur resize pour un bon responsive	
+	$(window).resize(function() {
+		$('#content').css('height','auto');
+	});
 	function bgVisible(){
 		$('.link_windows').removeClass('link_windows_focus');
 		$('.link_mac').removeClass('link_mac_focus');
@@ -11,13 +15,27 @@ $(document).ready(function(){
 
 	$('#telechargement > header > a').click(function(){
 		var_id = $(this).attr("href")
+		/*on scroll sur la div telechargement*/
+		$('html, body').animate({  
+			scrollTop:$('#telechargement').offset().top-20+'px'  
+		}, 'slow');
 		if($(var_id).css('display') != 'block'){
+			/*si le block n'est pas visible on fait appel a la fonction 
+			bgVisible pour remettre les icones par défault*/
 			bgVisible();
+			/*on rajoute une classe pour change l'icone active*/
 			$(this).addClass('link_'+var_id.substr(1,8)+'_focus');
+			/*et on slide*/
+			section_height = $(var_id).outerHeight();
+			section_header_height = $('#telechargement > header').outerHeight();
+			content_header_height = $('#content > header').outerHeight();
+			//80 margin+padding content 
+			$('#content').css('height', section_height+section_header_height+content_header_height+80+100);
 			$("#telechargement > section:visible").slideUp("",function(){
 				$(var_id).slideDown();
 			});
 		}
+		
 	}); 
 
 	//Lorsque vous cliquez sur un lien de la classe poplight et que le href commence par #
@@ -34,7 +52,7 @@ $(document).ready(function(){
 	$('#' + popID).fadeIn().css({
 		'width': Number(popWidth)
 	})
-	.prepend('<a href"#" class="close"><img src="images/close_pop.png" class="btn_close" tilte="Fermer" alt="Fermer" /></a>');
+	.prepend('<a href"#" class="close"><img src="images/picto/close.png" class="btn_close" tilte="Fermer" alt="Fermer" /></a>');
 
 	//Récupération du margin, qui permettra de centrer la fenêtre - on ajuste de 80px en conformité avec le CSS
 	var popMargTop = ($('#' + popID).height() + 80) / 2;
