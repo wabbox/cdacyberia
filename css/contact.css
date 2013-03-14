@@ -1,4 +1,13 @@
-form {
+fieldset {
+	display: block;
+	padding: 1px;
+	margin-right: 0;
+	margin-bottom: 10px;
+}
+select {
+	width: auto;
+}
+#form {
 	padding: 30px;
 	margin: 40px 0;
 	border-radius: 11px;
@@ -11,59 +20,92 @@ form {
 
 	/* background: url(../images/background/form.jpg) no-repeat left top; */
 }
+form {
+	/* background-color: #808080; */
+	width: 90%;
+	margin: 0 auto;
+
+
+}
 .gauche {
+	/* background-color: #C0C0C0; */
 	float: left;
-	width: 40%;
+	width: 42%;
 }
 .droite {
-	margin-left: 40%;
+	/* background-color: #400080; */
+	float: right;
+	width: 42%;
+	/*position: relative;
+	 margin-left: 60%; */
+}
+.droite input {
+	width: 70%;
 }
 label {
     display: block;
-    width: 100px;
+    width: 110px;
     float: left;
     cursor: pointer;
 }
 .form-required {
 	color: #AF0105;
 }
-.tooltip {
-  /* display: block; */
-  margin-left: 100px;
-  padding: 2px 4px;
-  border: 1px solid #555;
-  background-color: #CCC;
-  color: #992e2e;
-  font-size: 0.8em;
-}
 form p {
-	margin: 20px 0;
+	margin: 20px 0 10px;
 }
-[type="text"], textarea, select{
-	width: 70%;
+[type="text"], textarea, select {
+	display: block;
 	border: 1px solid #999;
 	border-radius: 4px;
 	line-height: 1.5em;
 	box-shadow: 1px 1px 8px #AAA inset;
 }
-#message {
-	width: 82%;
+[type="text"] {
+	width: 70%;
 }
-[type="submit"], [type="reset"]{
-	padding: 0 10px;
-	height: 40px;
-	border-radius: 8px;
-	border: 1px solid #EEE;
+#message {
+	width: 87%;
+}
+[type="submit"], [type="reset"] {
+	padding: 0 20px;
+	height: 30px;
 	cursor: pointer;
-	background: #CCC;
-	font-size: 1.2em;
+	/* background: #8080FF; */
+	font: 16px rawengulkbold, Helvetica, Arial, sans-serif;
 	font-weight: bold;
-	color: #888;
-	box-shadow: 1px 2px 0 3px #AAA;
-	text-shadow: 1px 1px 0 #EEE;
+	/* box-shadow: 1px 1px 0 1px #AAA; */
+	/* text-shadow: 1px 1px 0 #EEE; */
 	float: right;
 	margin-left: 20px;
 }
-select {
-	width: auto;
+.alert-box, .success-box, .tooltip {
+	font-family: 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 0.875em;
+	color: #fff;
+	padding: 10px;
+
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+.tooltip {
+  margin-left: 110px;
+  padding: 2px 4px;
+}
+.alert-box, .tooltip {
+	background-color: #E51A2E;
+	border: 1px solid #970b0e;
+}
+.success-box {
+	background-color: #5DA423;
+	border: 1px solid #457a1a;
+}
+.correct {
+	border-color: rgba(68, 191, 68, 0.75);
+	color: green;
+}
+.incorrect {
+	border-color: rgba(191, 68, 68, 0.75);
 }
