@@ -106,6 +106,25 @@ form p {
 	border-color: rgba(68, 191, 68, 0.75);
 	color: green;
 }
+.correct:focus {
+	border-color: rgba(68, 191, 68, 0.75);
+	-moz-box-shadow: 0 0 8px rgba(68, 191, 68, 0.5);
+	-webkit-box-shadow: 0 0 8px rgba(68, 191, 68, 0.5);
+	-o-box-shadow: 0 0 8px rgba(68, 191, 68, 0.5);
+	-ms-box-shadow: 0 0 8px rgba(68, 191, 68, 0.5);
+	box-shadow: 0 0 8px rgba(68, 191, 68, 0.5);
+}
 .incorrect {
 	border-color: rgba(191, 68, 68, 0.75);
+}
+.incorrect:focus {
+	border-color: rgba(191, 68, 68, 0.75);
+	-moz-box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
+	-webkit-box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
+	-o-box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
+	-ms-box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
+	box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
+}
+.tooltip {
+	display: none;
 }
