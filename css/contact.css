@@ -116,6 +116,7 @@ form p {
 }
 .incorrect {
 	border-color: rgba(191, 68, 68, 0.75);
+	color: #E51A2E;
 }
 .incorrect:focus {
 	border-color: rgba(191, 68, 68, 0.75);
