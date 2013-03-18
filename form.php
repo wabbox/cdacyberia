@@ -1,6 +1,7 @@
 <?php
 # Déclaration de l'adresse de destination.
 $mailto = 'afipperrin@gmail.com'; 
+// $mailto = 'g.vacher@cyberia-utopia.fr'; 
 
 if (!preg_match("#^[a-z0-9._-]+@(hotmail|live|msn).[a-z]{2,4}$#", $mailto)) {
 	// On filtre les serveurs qui rencontrent des bogues.
@@ -87,7 +88,7 @@ if (!isset($_POST)) {
 			<li><span>Nom</span> : ".$nom."</li>  
 			<li><span>Prénom</span> : ".$prenom."</li>
 			<li><span>Société</span> : ".$societe."</li>
-			<li><span>Adresse</span> : <ul><li>".$adresse."</li>".$codePostal." ".$ville."<li></li></ul></li>
+			<li><span>Adresse</span> : <ul><li>".$adresse."</li><li>".$codePostal." ".$ville."</li></ul></li>
 			<li><span>Numéro téléphone</span> : ".$telephone."</li>
 			<li><span>E-mail</span> : ".$email."</li>
 			</ul>

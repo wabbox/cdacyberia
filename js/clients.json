@@ -1,0 +1,63 @@
+{"departements":[
+
+{
+	"code"  : "01",
+	"region": "Ain",
+	"clients":[
+	{
+		"nom"    : "Optimium Assurance",
+		"contact": "Mr Depinay",
+		"ville"  : "BORDEAUX"
+	},
+	{
+		"nom"    : "Optimium Assurance",
+		"contact": "Mr Depinay",
+		"ville"  : "BORDEAUX"
+	},
+	{
+		"nom"    : "Cabinet JOUFFRAU",
+		"contact": "Mr Jouffrau",
+		"ville"  : "LANTON"
+	}]	
+},
+{
+	"code"  : "02",
+	"region": "Aisne",
+	"clients":[
+	{
+		"nom"    : "Optimium Assurance",
+		"contact": "Mr Depinay",
+		"ville"  : "BORDEAUX"
+	},
+	{
+		"nom"    : "Optimium Assurance",
+		"contact": "Mr Depinay",
+		"ville"  : "BORDEAUX"
+	},
+	{
+		"nom"    : "Cabinet JOUFFRAU",
+		"contact": "Mr Jouffrau",
+		"ville"  : "LANTON"
+	}]	
+},
+{
+	"code"  : "03",
+	"region": "Allier",
+	"clients":[
+	{
+		"nom"    : "Optimium Assurance",
+		"contact": "Mr Depinay",
+		"ville"  : "BORDEAUX"
+	},
+	{
+		"nom"    : "Optimium Assurance",
+		"contact": "Mr Depinay",
+		"ville"  : "BORDEAUX"
+	},
+	{
+		"nom"    : "Cabinet JOUFFRAU",
+		"contact": "Mr Jouffrau",
+		"ville"  : "LANTON"
+	}]	
+}]
+}

@@ -14,12 +14,38 @@
   <!-- Included CSS général -->
   <link rel="stylesheet" href="css/base.css" media="all">
   <!-- Included CSS spécifique à la page -->
-  <link rel="stylesheet" href="css/acceuil.css" media="all">  
+  <link rel="stylesheet" href="css/acceuil.css" media="all"> 
+  <link rel="stylesheet" href="css/jqvmap.css" media="all"> 
   <!--[if lte IE 8]>
     <link rel="stylesheet" href="css/ie.css" />
     <![endif]-->
     <!-- Included JS -->
     <script src="js/modernizr.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="js/jqvmap/jquery.vmap.js"></script>
+    <script src="js/jqvmap/jquery.vmap.france.js"></script>
+    <script src="js/jqvmap/jquery.vmap.colorsFrance.js"></script>
+    <script>                                              
+    $(document).ready(function() {
+      $('#vmap').vectorMap({
+        map: 'france_fr',
+        hoverOpacity: 0.5,
+        hoverColor: false,
+        backgroundColor: "#f4f4f4",
+        colors: couleurs,
+        borderColor: "#000",
+        borderWidth: .5,
+        borderOpacity:.5,
+        normalizeFunction: 'polynomial',
+        enableZoom: true,
+        showTooltip: true,
+        onRegionClick: function(element, code, region)
+        {
+          console.log("element : "+element+". code : "+code+". region : "+region+".");
+        }
+      });
+    });
+    </script>
   </head>
   <body>
     <!-- header -->
@@ -56,6 +82,7 @@
     <!-- content -->
     <div id="content">
       <h2>En cours de réalisation</h2>
+      <div id="vmap"  style="width: 700px; height: 600px;" class="map_index"></div>                                  
     </div>
     <!-- footer -->
     <div class="footer-bg">

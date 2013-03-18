@@ -1,27 +1,64 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Test Carte CDA</title>
-<script type="text/javascript">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Test Carte CDA</title>
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){ 
+		// console.log(str);
+		var $regions = $('#regions');
+		var $departements = $('#departements');
 
-function envoiJavaScript(str)
-{
-	console.log(str);
-}
+		// chargement des régions
+		$.getJSON('../js/partenaire.json', function(data) {
+			$.each(data.regions, function(index, value) {
+	            // on ajoute l option dans la liste
+	            $regions.append('<option value="'+ value.id_region +'">'+ value.name_region +'</option>');
+	        });
+		});
+
+		function envoiJavaScript(str)
+		{	
+			if(str != '') {
+				$departements.empty(); // on vide la liste des départements
+				$.getJSON('../js/partenaire.json', function(data) {
+					//selection de la region via str du flash
+					region = $.grep(data.regions, function(element, index){
+						return element.id_region == str; // retain appropriate elements
+					});
+					//liste des departements
+					$.each(region, function(i, region){
+						for (var i = 0; i < region.departements.length; i++) {
+							console.log(region.departements[i].code_dep);
+						}
+					});
+				});
+			}	
+		}
+
+		// à la sélection d une région dans la liste
+	    $regions.on('change', function() {
+	    	var str = $(this).val(); // on récupère la valeur de la région
+	    	envoiJavaScript(str);
+	    });	
+	});
 </script>
 </head>
 <body>
-<h1>Carte de france par région</h1>
-<!--début de l'animation Flash-->
-<object type="application/x-shockwave-flash" id="carte-france" data="carte-france.swf" width="510" height="510">
-    <param name="movie" value="carte-france.swf" />
-	<param name="allowScriptAccess" value="sameDomain" />
-</object>
-<h2>Le HTML</h2>
-<!--fin de l'animation Flash-->
-<fieldset style="width:280px">
-	<p><textarea id="texte" cols="30" rows="4"></textarea></p>
-</fieldset>
+	<h1>Carte de france par région</h1>
+	<!--début de l'animation Flash-->
+	<object type="application/x-shockwave-flash" id="carte-france" data="carte-france.swf" width="510" height="510">
+		<param name="movie" value="carte-france.swf" />
+		<param name="allowScriptAccess" value="sameDomain" />
+	</object>
+	<!--fin de l'animation Flash-->
+	<select id="regions" name="regions">
+		<option value="">-- Régions --</option>
+	</select>
+
+	<select id="departements" name="departements">
+		<option value="">-- Départements--</option>
+	</select>
 </body>
 </html>
 

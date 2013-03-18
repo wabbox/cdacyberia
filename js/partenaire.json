@@ -1,0 +1,34 @@
+{"regions":[
+
+{
+	"id_region" : "nord_pas_de_calais",
+	"name_region" : "Nord-Pas-de-Calais",
+	"departements":[
+	{
+		"code_dep": "59",
+		"nom_dep" : "Nord"
+	},
+	{
+		"code_dep": "62",
+		"nom_dep" : "Pas de Calais"
+	}]	
+},
+{	
+	"id_region" : "picardie",
+	"name_region" : "Picardie",
+	"departements":[
+	{
+		"code_dep": "02",
+		"nom_dep" : "Aisne"
+	},
+	{
+		"code_dep": "60",
+		"nom_dep" : "Oise"
+	},
+	{
+		"code_dep": "80",
+		"nom_dep" : "Somme"
+	}
+	]
+}
+]}
