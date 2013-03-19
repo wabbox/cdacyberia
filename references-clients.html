@@ -14,15 +14,22 @@
   <!-- Included CSS général -->
   <link rel="stylesheet" href="css/base.css" media="all">
   <!-- Included CSS spécifique à la page -->
-  <link rel="stylesheet" href="css/acceuil.css" media="all"> 
-  <link rel="stylesheet" href="css/jqvmap.css" media="all"> 
+  <link rel="stylesheet" href="css/clients.css" media="all"> 
+  <!--  <link rel="stylesheet" href="css/jqvmap.css" media="all"> -->
   <!--[if lte IE 8]>
     <link rel="stylesheet" href="css/ie.css" />
     <![endif]-->
     <!-- Included JS -->
     <script src="js/modernizr.js"></script>
-    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="js/jqvmap/jquery.vmap.js"></script>
+    <script>
+    function envoiJavaScript(str)
+    { 
+        alert(str);
+        listeRegions(str);
+    }
+    </script>
+  <!--    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="js/jqvmap/jquery.vmap.js"></script>
     <script src="js/jqvmap/jquery.vmap.france.js"></script>
     <script src="js/jqvmap/jquery.vmap.colorsFrance.js"></script>
     <script>                                              
@@ -45,73 +52,103 @@
         }
       });
     });
-    </script>
-  </head>
-  <body>
-    <!-- header -->
-    <div class="header-bg">
-      <header>
-        <article class="logo">
-          <a href="index.html">
-            <h1>CDA Informatique</h1>
-          </a>
-        </article>
-        <div class="vcard">
-          <div class="adr">
-            <div class="street-address">9 rue St Eusèbe</div>
-            <span class="postal-code">69003 </span><span class="locality">LYON</span>
-            <div class="tel">Tel 04 37 91 26 00</div>
-            <div class="fax">Fax 04 37 91 26 01</div>
-            <a class="email" href="mailto:support@cda-informatique.fr">support@cda-informatique.fr</a>
-          </div>
+  </script> -->
+</head>
+<body>
+  <!-- header -->
+  <div class="header-bg">
+    <header>
+      <article class="logo">
+        <a href="index.html">
+          <h1>CDA Informatique</h1>
+        </a>
+      </article>
+      <div class="vcard">
+        <div class="adr">
+          <div class="street-address">9 rue St Eusèbe</div>
+          <span class="postal-code">69003 </span><span class="locality">LYON</span>
+          <div class="tel">Tel 04 37 91 26 00</div>
+          <div class="fax">Fax 04 37 91 26 01</div>
+          <a class="email" href="mailto:support@cda-informatique.fr">support@cda-informatique.fr</a>
+        </div>
+      </div>
+      <br class="clear">
+    </header>
+    <!-- menu -->
+    <nav>
+      <ul>
+        <li><a href="qui-sommes-nous.html">Qui sommes nous ?</a></li>
+        <li><a href="references-clients.html">Références Clients</a></li>
+        <li><a href="partenaires.html">Partenaires</a></li>
+        <li><a href="telechargements.html">Téléchargements logiciels</a></li>
+        <li><a href="documentation.html">Documentation</a></li>
+        <li><a href="contactez-nous.html">Contactez nous</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!-- content -->
+  <div id="content">
+    <!-- <div id="vmap"  style="width: 700px; height: 600px;" class="map_index"></div> -->     
+    <header>
+      <h3>Références Clients</h3>
+      <p>Vous trouverez ici toutes nos références clients en France. Cliquez sur une région pour afficher les références.</p>
+    </header>
+    <section>
+      <!--début de l'animation Flash-->
+      <object type="application/x-shockwave-flash" id="carte-france" data="flash/carte-france.swf" width="510" height="510">
+        <param name="movie" value="flash/carte-france.swf" />
+        <param name="allowScriptAccess" value="sameDomain" />
+      </object>
+      <!--fin de l'animation Flash-->
+      <article id="refClient">
+        <h3>Régions</h3>
+        <p class="dept">Isère (38)</p>
+        <ul>
+          
+        </ul>
+        <div class="droite">
+          <select id="regions" name="regions">
+            <option value=""> Choisissez une région </option>
+          </select>
+          <select id="departements" name="departements">
+            <option value=""> Choisissez un département </option>
+          </select>
         </div>
         <br class="clear">
-      </header>
-      <!-- menu -->
-      <nav>
+      </article>
+      <br class="clear">
+    </section>              
+  </div>
+  <!-- footer -->
+  <div class="footer-bg">
+    <footer>
+      <section id="service">
         <ul>
           <li><a href="qui-sommes-nous.html">Qui sommes nous ?</a></li>
-          <li><a href="references-clients.html">Références Clients</a></li>
+          <li><a href="references-clients.html">Références clients</a></li>
           <li><a href="partenaires.html">Partenaires</a></li>
           <li><a href="telechargements.html">Téléchargements logiciels</a></li>
+        </ul>
+      </section>
+      <section id="information">
+        <ul>
           <li><a href="documentation.html">Documentation</a></li>
           <li><a href="contactez-nous.html">Contactez nous</a></li>
+          <li><a href="mention-legal.html">Mentions légales</a></li>
         </ul>
-      </nav>
-    </div>
-    <!-- content -->
-    <div id="content">
-      <h2>En cours de réalisation</h2>
-      <div id="vmap"  style="width: 700px; height: 600px;" class="map_index"></div>                                  
-    </div>
-    <!-- footer -->
-    <div class="footer-bg">
-      <footer>
-        <section id="service">
-          <ul>
-            <li><a href="qui-sommes-nous.html">Qui sommes nous ?</a></li>
-            <li><a href="references-clients.html">Références clients</a></li>
-            <li><a href="partenaires.html">Partenaires</a></li>
-            <li><a href="telechargements.html">Téléchargements logiciels</a></li>
-          </ul>
-        </section>
-        <section id="information">
-          <ul>
-            <li><a href="documentation.html">Documentation</a></li>
-            <li><a href="contactez-nous.html">Contactez nous</a></li>
-            <li><a href="mention-legal.html">Mentions légales</a></li>
-          </ul>
-        </section>
-        <section id="description">
-          <p>Cda informatique est une société spécialisée dans les logiciels d’assurances et de gestion client. Profitez de l’expérience de leurs leaders et de leurs expertises dans ce domaine.</p>
-        </section>
-        <section id="raison-social"> 
-          <p>SARL au capital de 39 637,00 €</p> 
-          <p>RCS LYON B 379 596 349</p> 
-          <p>TVA FR3837959634900033</p> 
-        </section>
-        <br class="clear">
-      </footer>
-    </div>
-  </body>
-  </html>
+      </section>
+      <section id="description">
+        <p>Cda informatique est une société spécialisée dans les logiciels d’assurances et de gestion client. Profitez de l’expérience de leurs leaders et de leurs expertises dans ce domaine.</p>
+      </section>
+      <section id="raison-social"> 
+        <p>SARL au capital de 39 637,00 €</p> 
+        <p>RCS LYON B 379 596 349</p> 
+        <p>TVA FR3837959634900033</p> 
+      </section>
+      <br class="clear">
+    </footer>
+  </div>
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="js/carte.js"></script>
+</body>
+</html>

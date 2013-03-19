@@ -1,0 +1,20 @@
+#content section {
+	margin: 30px 0;
+}
+select {
+	display: block;
+	border: 1px solid #999;
+	border-radius: 4px;
+	line-height: 1.5em;
+	box-shadow: 1px 1px 8px #AAA inset;
+	width: auto;
+}
+.droite {
+	float: right;
+}
+object {
+	float: left;
+}
+#refClient {
+	margin-left: 540px;
+}

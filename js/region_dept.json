@@ -1,0 +1,517 @@
+{"regions":[
+{
+	"id_region" : "nord_pas_de_calais",
+	"name_region" : "Nord Pas de Calais",
+	"departements":[
+	{
+		"code_dep": "59",
+		"nom_dep" : "Nord"
+	},
+	{
+		"code_dep": "62",
+		"nom_dep" : "Pas de Calais"
+	}]	
+},
+{	
+	"id_region" : "picardie",
+	"name_region" : "Picardie",
+	"departements":[
+	{
+		"code_dep": "02",
+		"nom_dep" : "Aisne"
+	},
+	{
+		"code_dep": "60",
+		"nom_dep" : "Oise"
+	},
+	{
+		"code_dep": "80",
+		"nom_dep" : "Somme"
+	}
+	]
+},
+{
+	"id_region" : "haute_normandie",
+	"name_region" : "Haute Normandie",
+	"departements":[
+	{
+		"code_dep": "27",
+		"nom_dep" : "Eure"
+	},
+	{
+		"code_dep": "76",
+		"nom_dep" : "Seine-Maritime"
+	}
+	]
+},
+{
+	"id_region" : "basse_normandie",
+	"name_region" : "Basse Normandie",
+	"departements":[
+	{
+		"code_dep": "14",
+		"nom_dep" : "Calvados"
+	},
+	{
+		"code_dep": "50",
+		"nom_dep" : "Manche"
+	},
+	{
+		"code_dep": "61",
+		"nom_dep" : "Orne"
+	}
+	]
+},
+{
+	"id_region" : "bretagne",
+	"name_region" : "Bretagne",
+	"departements":[
+	{
+		"code_dep": "29",
+		"nom_dep" : "Finistère"
+	},
+	{
+		"code_dep": "35",
+		"nom_dep" : "Ille-et-Vilaine"
+	},
+	{
+		"code_dep": "56",
+		"nom_dep" : "Morbihan"
+	},
+	{
+		"code_dep": "22",
+		"nom_dep" : "Côtes-d'Armor"
+	}
+	]
+},
+{
+	"id_region" : "ile_france",
+	"name_region" : "Ile de France",
+	"departements":[
+	{
+		"code_dep": "75",
+		"nom_dep" : "Paris"
+	},
+	{
+		"code_dep": "77",
+		"nom_dep" : "Seine-et-Marne"
+	},
+	{
+		"code_dep": "78",
+		"nom_dep" : "Yvelines"
+	},
+	{
+		"code_dep": "91",
+		"nom_dep" : "Essonne"
+	},
+	{
+		"code_dep": "92",
+		"nom_dep" : "Hauts-de-Seine"
+	},
+	{
+		"code_dep": "93",
+		"nom_dep" : "Seine-Saint-Denis"
+	},
+	{
+		"code_dep": "94",
+		"nom_dep" : "Val-de-Marne"
+	},
+	{
+		"code_dep": "95",
+		"nom_dep" : "Val-d'Oise"
+	}
+	]
+},	
+{
+	"id_region" : "centre",
+	"name_region" : "Centre",
+	"departements":[
+	{
+		"code_dep": "18",
+		"nom_dep" : "Cher"
+	},
+	{
+		"code_dep": "28",
+		"nom_dep" : "Eure-et-Loir"
+	},
+	{
+		"code_dep": "36",
+		"nom_dep" : "Indre"
+	},
+	{
+		"code_dep": "37",
+		"nom_dep" : "Indre-et-Loire"
+	},
+	{
+		"code_dep": "41",
+		"nom_dep" : "Loir-et-Cher"
+	},
+	{
+		"code_dep": "45",
+		"nom_dep" : "Loiret"
+	}
+	]
+},
+{
+	"id_region" : "pays_loire",
+	"name_region" : "Pays de la Loire",
+	"departements":[
+	{
+		"code_dep": "44",
+		"nom_dep" : "Loire-Atlantique"
+	},
+	{
+		"code_dep": "49",
+		"nom_dep" : "Maine-et-Loire"
+	},
+	{
+		"code_dep": "53",
+		"nom_dep" : "Mayenne"
+	},
+	{
+		"code_dep": "72",
+		"nom_dep" : "Sarthe"
+	},
+	{
+		"code_dep": "85",
+		"nom_dep" : "Vendée"
+	}
+	]
+},	
+{
+	"id_region" : "bourgogne",
+	"name_region" : "Bourgogne",
+	"departements":[
+	{
+		"code_dep": "21",
+		"nom_dep" : "Côte-d'Or"
+	},
+	{
+		"code_dep": "58",
+		"nom_dep" : "Nièvre"
+	},
+	{
+		"code_dep": "71",
+		"nom_dep" : "Saône-et-Loire"
+	},
+	{
+		"code_dep": "89",
+		"nom_dep" : "Yonne"
+	}
+	]
+},	
+{
+	"id_region" : "champagne_ardenne",
+	"name_region" : "Champagne Ardenne",
+	"departements":[
+	{
+		"code_dep": "08",
+		"nom_dep" : "Ardennes"
+	},
+	{
+		"code_dep": "10",
+		"nom_dep" : "Aube"
+	},
+	{
+		"code_dep": "51",
+		"nom_dep" : "Marne"
+	},
+	{
+		"code_dep": "52",
+		"nom_dep" : "Haute-Marne"
+	}
+	]
+},
+{
+	"id_region" : "lorraine",
+	"name_region" : "Lorraine",
+	"departements":[
+	{
+		"code_dep": "54",
+		"nom_dep" : "Meurthe-et-Moselle"
+	},
+	{
+		"code_dep": "55",
+		"nom_dep" : "Meuse"
+	},
+	{
+		"code_dep": "57",
+		"nom_dep" : "Moselle"
+	},
+	{
+		"code_dep": "88",
+		"nom_dep" : "Vosges"
+	}
+	]
+},
+{
+	"id_region" : "alsace",
+	"name_region" : "Alsace",
+	"departements":[
+	{
+		"code_dep": "67",
+		"nom_dep" : "Bas-Rhin"
+	},
+	{
+		"code_dep": "68",
+		"nom_dep" : "Haut-Rhin"
+	}
+	]
+},
+{
+	"id_region" : "franche_comte",
+	"name_region" : "Franche Comté",
+	"departements":[
+	{
+		"code_dep": "25",
+		"nom_dep" : "Doubs"
+	},
+	{
+		"code_dep": "39",
+		"nom_dep" : "Jura"
+	},
+	{
+		"code_dep": "70",
+		"nom_dep" : "Haut-Saône"
+	},
+	{
+		"code_dep": "90",
+		"nom_dep" : "Territoire de Belfort"
+	}
+	]
+},
+{
+	"id_region" : "rhones_alpes",
+	"name_region" : "Rhône Alpes",
+	"departements":[
+	{
+		"code_dep": "01",
+		"nom_dep" : "Ain"
+	},
+	{
+		"code_dep": "07",
+		"nom_dep" : "Ardèche"
+	},
+	{
+		"code_dep": "26",
+		"nom_dep" : "Drôme"
+	},
+	{
+		"code_dep": "38",
+		"nom_dep" : "Isère"
+	},
+	{
+		"code_dep": "42",
+		"nom_dep" : "Loire"
+	},
+	{
+		"code_dep": "69",
+		"nom_dep" : "Rhône"
+	},
+	{
+		"code_dep": "73",
+		"nom_dep" : "Savoie"
+	},
+	{
+		"code_dep": "74",
+		"nom_dep" : "Haute-Savoie"
+	}
+	]
+},
+{
+	"id_region" : "auvergne",
+	"name_region" : "Auvergne",
+	"departements":[
+	{
+		"code_dep": "03",
+		"nom_dep" : "Allier"
+	},
+	{
+		"code_dep": "15",
+		"nom_dep" : "Cantal"
+	},
+	{
+		"code_dep": "43",
+		"nom_dep" : "Haute-Loire"
+	},
+	{
+		"code_dep": "63",
+		"nom_dep" : "Puy-de-Dôme"
+	}
+	]
+},
+{
+	"id_region" : "limousin",
+	"name_region" : "Limousin",
+	"departements":[
+	{
+		"code_dep": "19",
+		"nom_dep" : "Corrèze"
+	},
+	{
+		"code_dep": "23",
+		"nom_dep" : "Creuse"
+	},
+	{
+		"code_dep": "87",
+		"nom_dep" : "Haute-Vienne"
+	}
+	]
+},
+{
+	"id_region" : "poitou_charentes",
+	"name_region" : "Poitou Charentes",
+	"departements":[
+	{
+		"code_dep": "16",
+		"nom_dep" : "Charente"
+	},
+	{
+		"code_dep": "17",
+		"nom_dep" : "Charente-Maritime"
+	},
+	{
+		"code_dep": "79",
+		"nom_dep" : "Deux-Sèvres"
+	},
+	{
+		"code_dep": "86",
+		"nom_dep" : "Vienne"
+	}
+	]
+},
+{
+	"id_region" : "aquitaine",
+	"name_region" : "Aquitaine",
+	"departements":[
+	{
+		"code_dep": "24",
+		"nom_dep" : "Dordogne"
+	},
+	{
+		"code_dep": "33",
+		"nom_dep" : "Gironde"
+	},
+	{
+		"code_dep": "40",
+		"nom_dep" : "Landes"
+	},
+	{
+		"code_dep": "47",
+		"nom_dep" : "Lot-et-Garonne"
+	},
+	{
+		"code_dep": "64",
+		"nom_dep" : "Pyrénées-Atlantiques"
+	}
+	]
+},
+{
+	"id_region" : "midi_pyrenees",
+	"name_region" : "Midi Pyrénées",
+	"departements":[
+	{
+		"code_dep": "09",
+		"nom_dep" : "Ariège"
+	},
+	{
+		"code_dep": "12",
+		"nom_dep" : "Aveyron"
+	},
+	{
+		"code_dep": "31",
+		"nom_dep" : "Haute-Garonne"
+	},
+	{
+		"code_dep": "32",
+		"nom_dep" : "Gers"
+	},
+	{
+		"code_dep": "46",
+		"nom_dep" : "Lot"
+	},
+	{
+		"code_dep": "65",
+		"nom_dep" : "Hautes-Pyrénées"
+	},
+	{
+		"code_dep": "81",
+		"nom_dep" : "Tarn"
+	},
+	{
+		"code_dep": "82",
+		"nom_dep" : "Tarn-et-Garonne"
+	}
+	]
+},
+{
+	"id_region" : "languedoc_roussillon",
+	"name_region" : "Languedoc Roussillon",
+	"departements":[
+	{
+		"code_dep": "11",
+		"nom_dep" : "Aude"
+	},
+	{
+		"code_dep": "30",
+		"nom_dep" : "Gard"
+	},
+	{
+		"code_dep": "34",
+		"nom_dep" : "Hérault"
+	},
+	{
+		"code_dep": "48",
+		"nom_dep" : "Lozère"
+	},
+	{
+		"code_dep": "66",
+		"nom_dep" : "Pyrénées-Orientales"
+	}
+	]
+},
+{
+	"id_region" : "paca",
+	"name_region" : "Provence Alpes Côte d'Azur",
+	"departements":[
+	{
+		"code_dep": "04",
+		"nom_dep" : "Alpes-de-Haute-Provence"
+	},
+	{
+		"code_dep": "05",
+		"nom_dep" : "Hautes-Alpes"
+	},
+	{
+		"code_dep": "06",
+		"nom_dep" : "Alpes-Maritimes"
+	},
+	{
+		"code_dep": "13",
+		"nom_dep" : "Bouches-du-Rhône"
+	},
+	{
+		"code_dep": "83",
+		"nom_dep" : "Var"
+	},
+	{
+		"code_dep": "84",
+		"nom_dep" : "Vaucluse"
+	}
+	]
+},
+{
+	"id_region" : "corse",
+	"name_region" : "Corse",
+	"departements":[
+	{
+		"code_dep": "2A",
+		"nom_dep" : "Corse-du-Sud"
+	},
+	{
+		"code_dep": "2B",
+		"nom_dep" : "Haute-Corse"
+	}
+	]
+} 
+]}

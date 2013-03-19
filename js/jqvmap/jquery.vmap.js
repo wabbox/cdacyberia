@@ -501,7 +501,7 @@
                                         map.label.text(mapData.pathes[code].name+" "+code);
                                         jQuery(params.container).trigger(labelShowEvent, [map.label, code]);
                                         $.getJSON("js/clients.json", function(data) {
-                                                //selection de la region via str du flash
+                                                //selection du departement
                                                 dept = $.grep(data.departements, function(element, index){
                                                         return element.code == code; // retain appropriate elements
                                                 });
