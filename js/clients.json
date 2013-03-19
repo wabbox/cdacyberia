@@ -1,483 +1,607 @@
 {"departements":[
-
-{
-	"code"  : "01",
-	"region": "Ain",
-	"clients":[
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Cabinet JOUFFRAU",
-		"contact": "Mr Jouffrau",
-		"ville"  : "LANTON"
-	}]	
-},
-{
-	"code"  : "02",
-	"region": "Aisne",
-	"clients":[
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Cabinet JOUFFRAU",
-		"contact": "Mr Jouffrau",
-		"ville"  : "LANTON"
-	}]	
-},
-{
-	"code"  : "03",
-	"region": "Allier",
-	"clients":[
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Cabinet JOUFFRAU",
-		"contact": "Mr Jouffrau",
-		"ville"  : "LANTON"
-	}]	
-},
-{
-	"code"  : "04",
-	"region": "Alpes-de-Haute-Provence",
-	"clients":[
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Cabinet JOUFFRAU",
-		"contact": "Mr Jouffrau",
-		"ville"  : "LANTON"
-	}]	
-},
-{
-	"code"  : "05",
-	"region": "Hautes-Alpes",
-	"clients":[
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Cabinet JOUFFRAU",
-		"contact": "Mr Jouffrau",
-		"ville"  : "LANTON"
-	}]	
-},
-{
-	"code"  : "06",
-	"region": "Alpes-Maritimes",
-	"clients":[
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Cabinet JOUFFRAU",
-		"contact": "Mr Jouffrau",
-		"ville"  : "LANTON"
-	}]	
-},
-{
-	"code"  : "07",
-	"region": "Ardèche",
-	"clients":[
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Cabinet JOUFFRAU",
-		"contact": "Mr Jouffrau",
-		"ville"  : "LANTON"
-	}]	
-},
-{
-	"code"  : "08",
-	"region": "Ardennes",
-	"clients":[
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Cabinet JOUFFRAU",
-		"contact": "Mr Jouffrau",
-		"ville"  : "LANTON"
-	}]	
-},
-{
-	"code"  : "09",
-	"region": "Ariège",
-	"clients":[
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Cabinet JOUFFRAU",
-		"contact": "Mr Jouffrau",
-		"ville"  : "LANTON"
-	}]	
-},
-{
-	"code"  : "10",
-	"region": "Aube",
-	"clients":[
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Cabinet JOUFFRAU",
-		"contact": "Mr Jouffrau",
-		"ville"  : "LANTON"
-	}]	
-},
-{
-	"code"  : "11",
-	"region": "Aude",
-	"clients":[
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Cabinet JOUFFRAU",
-		"contact": "Mr Jouffrau",
-		"ville"  : "LANTON"
-	}]	
-},
-{
-	"code"  : "12",
-	"region": "Aveyron",
-	"clients":[
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Cabinet JOUFFRAU",
-		"contact": "Mr Jouffrau",
-		"ville"  : "LANTON"
-	}]	
-},
-{
-	"code"  : "13",
-	"region": "Bouches-du-Rhône",
-	"clients":[
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Cabinet JOUFFRAU",
-		"contact": "Mr Jouffrau",
-		"ville"  : "LANTON"
-	}]	
-},
-{
-	"code"  : "14",
-	"region": "Calvados",
-	"clients":[
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Cabinet JOUFFRAU",
-		"contact": "Mr Jouffrau",
-		"ville"  : "LANTON"
-	}]	
-},
-{
-	"code"  : "15",
-	"region": "Cantal",
-	"clients":[
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Cabinet JOUFFRAU",
-		"contact": "Mr Jouffrau",
-		"ville"  : "LANTON"
-	}]	
-},
-{
-	"code"  : "16",
-	"region": "Charente",
-	"clients":[
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Cabinet JOUFFRAU",
-		"contact": "Mr Jouffrau",
-		"ville"  : "LANTON"
-	}]	
-},
-{
-	"code"  : "17",
-	"region": "Charente-Maritime",
-	"clients":[
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Cabinet JOUFFRAU",
-		"contact": "Mr Jouffrau",
-		"ville"  : "LANTON"
-	}]	
-},
-{
-	"code"  : "18",
-	"region": "Cher",
-	"clients":[
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Cabinet JOUFFRAU",
-		"contact": "Mr Jouffrau",
-		"ville"  : "LANTON"
-	}]	
-},
-{
-	"code"  : "19",
-	"region": "Corrèze",
-	"clients":[
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Cabinet JOUFFRAU",
-		"contact": "Mr Jouffrau",
-		"ville"  : "LANTON"
-	}]	
-},
-{
-	"code"  : "21",
-	"region": "Côte-d'Or",
-	"clients":[
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Cabinet JOUFFRAU",
-		"contact": "Mr Jouffrau",
-		"ville"  : "LANTON"
-	}]	
-},
-{
-	"code"  : "22",
-	"region": "Côtes-d'Armor",
-	"clients":[
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Cabinet JOUFFRAU",
-		"contact": "Mr Jouffrau",
-		"ville"  : "LANTON"
-	}]	
-},
-{
-	"code"  : "23",
-	"region": "Creuse",
-	"clients":[
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Cabinet JOUFFRAU",
-		"contact": "Mr Jouffrau",
-		"ville"  : "LANTON"
-	}]	
-},
-{
-	"code"  : "24",
-	"region": "Dordogne",
-	"clients":[
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Cabinet JOUFFRAU",
-		"contact": "Mr Jouffrau",
-		"ville"  : "LANTON"
-	}]	
-},
-{
-	"code"  : "25",
-	"region": "Doubs",
-	"clients":[
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Optimium Assurance",
-		"contact": "Mr Depinay",
-		"ville"  : "BORDEAUX"
-	},
-	{
-		"nom"    : "Cabinet JOUFFRAU",
-		"contact": "Mr Jouffrau",
-		"ville"  : "LANTON"
-	}]	
-}]
-}
+	{
+		"code": "59",
+		"region" : "Nord",
+		"clients":[
+		{
+			"nom"    : "Optimium Assurance",
+			"contact": "Mr Depinay",
+			"ville"  : "BORDEAUX"
+		},
+		{
+			"nom"    : "Optimium Assurance",
+			"contact": "Mr Depinay",
+			"ville"  : "BORDEAUX"
+		},
+		{
+			"nom"    : "Cabinet JOUFFRAU",
+			"contact": "Mr Jouffrau",
+			"ville"  : "LANTON"
+		}	
+	]},
+	{
+		"code": "62",
+		"region" : "Pas de Calais",
+		"clients":[
+	]},
+	{
+		"code": "02",
+		"region" : "Aisne",
+		"clients":[
+	]},
+	{
+		"code": "60",
+		"region" : "Oise",
+		"clients":[
+	]},
+	{
+		"code": "80",
+		"region" : "Somme",
+		"clients":[
+	]},
+	{
+		"code": "27",
+		"region" : "Eure",
+		"clients":[
+	]},
+	{
+		"code": "76",
+		"region" : "Seine-Maritime",
+		"clients":[
+	]},
+	{
+		"code": "14",
+		"region" : "Calvados",
+		"clients":[
+	]},
+	{
+		"code": "50",
+		"region" : "Manche",
+		"clients":[
+	]},
+	{
+		"code": "61",
+		"region" : "Orne",
+		"clients":[
+	]},
+	{
+		"code": "29",
+		"region" : "Finistère",
+		"clients":[
+	]},
+	{
+		"code": "35",
+		"region" : "Ille-et-Vilaine",
+		"clients":[
+	]},
+	{
+		"code": "56",
+		"region" : "Morbihan",
+		"clients":[
+	]},
+	{
+		"code": "22",
+		"region" : "Côtes-d'Armor",
+		"clients":[
+	]},
+	{
+		"code": "75",
+		"region" : "Paris",
+		"clients":[
+	]},
+	{
+		"code": "77",
+		"region" : "Seine-et-Marne",
+		"clients":[
+	]},
+	{
+		"code": "78",
+		"region" : "Yvelines",
+		"clients":[
+	]},
+	{
+		"code": "91",
+		"region" : "Essonne",
+		"clients":[
+	]},
+	{
+		"code": "92",
+		"region" : "Hauts-de-Seine",
+		"clients":[
+	]},
+	{
+		"code": "93",
+		"region" : "Seine-Saint-Denis",
+		"clients":[
+	]},
+	{
+		"code": "94",
+		"region" : "Val-de-Marne",
+		"clients":[
+	]},
+	{
+		"code": "95",
+		"region" : "Val-d'Oise",
+		"clients":[
+	]},
+	{
+		"code": "18",
+		"region" : "Cher",
+		"clients":[
+	]},
+	{
+		"code": "28",
+		"region" : "Eure-et-Loir",
+		"clients":[
+	]},
+	{
+		"code": "36",
+		"region" : "Indre",
+		"clients":[
+	]},
+	{
+		"code": "37",
+		"region" : "Indre-et-Loire",
+		"clients":[
+	]},
+	{
+		"code": "41",
+		"region" : "Loir-et-Cher",
+		"clients":[
+	]},
+	{
+		"code": "45",
+		"region" : "Loiret",
+		"clients":[
+	]},
+	{
+		"code": "44",
+		"region" : "Loire-Atlantique",
+		"clients":[
+	]},
+	{
+		"code": "49",
+		"region" : "Maine-et-Loire",
+		"clients":[
+	]},
+	{
+		"code": "53",
+		"region" : "Mayenne",
+		"clients":[
+	]},
+	{
+		"code": "72",
+		"region" : "Sarthe",
+		"clients":[
+	]},
+	{
+		"code": "85",
+		"region" : "Vendée",
+		"clients":[
+	]},
+	{
+		"code": "21",
+		"region" : "Côte-d'Or",
+		"clients":[
+	]},
+	{
+		"code": "58",
+		"region" : "Nièvre",
+		"clients":[
+	]},
+	{
+		"code": "71",
+		"region" : "Saône-et-Loire",
+		"clients":[
+	]},
+	{
+		"code": "89",
+		"region" : "Yonne",
+		"clients":[
+	]},
+	{
+		"code": "08",
+		"region" : "Ardennes",
+		"clients":[
+	]},
+	{
+		"code": "10",
+		"region" : "Aube",
+		"clients":[
+	]},
+	{
+		"code": "51",
+		"region" : "Marne",
+		"clients":[
+	]},
+	{
+		"code": "52",
+		"region" : "Haute-Marne",
+		"clients":[
+	]},
+	{
+		"code": "54",
+		"region" : "Meurthe-et-Moselle",
+		"clients":[
+	]},
+	{
+		"code": "55",
+		"region" : "Meuse",
+		"clients":[
+	]},
+	{
+		"code": "57",
+		"region" : "Moselle",
+		"clients":[
+	]},
+	{
+		"code": "88",
+		"region" : "Vosges",
+		"clients":[
+	]},
+	{
+		"code": "67",
+		"region" : "Bas-Rhin",
+		"clients":[
+	]},
+	{
+		"code": "68",
+		"region" : "Haut-Rhin",
+		"clients":[
+	]},
+	{
+		"code": "25",
+		"region" : "Doubs",
+		"clients":[
+	]},
+	{
+		"code": "39",
+		"region" : "Jura",
+		"clients":[
+	]},
+	{
+		"code": "70",
+		"region" : "Haut-Saône",
+		"clients":[
+	]},
+	{
+		"code": "90",
+		"region" : "Territoire de Belfort",
+		"clients":[
+	]},
+	{
+		"code": "01",
+		"region" : "Ain",
+		"clients":[
+		{
+			"nom"    : "Cabinet R. PAGET",
+			"contact": "Mme Paget",
+			"ville"  : "OYONNAX"
+		},
+		{
+			"nom"    : "Cabinet PIBOULEAU",
+			"contact": "Mr Pibouleau",
+			"ville"  : "ST GENIS POUILLY"
+		},
+		{
+			"nom"    : "COURTASS",
+			"contact": "Mr Giraud - Mr Negrello",
+			"ville"  : "ST DENIS LES BOURG"
+		},	
+		{
+			"nom"    : "Cabinet BENIER",
+			"contact": "Mr Bénier",
+			"ville"  : "THOIRY"
+		}
+	]},
+	{
+		"code": "07",
+		"region" : "Ardèche",
+		"clients":[
+	]},
+	{
+		"code": "26",
+		"region" : "Drôme",
+		"clients":[
+	]},
+	{
+		"code": "38",
+		"region" : "Isère",
+		"clients":[
+	]},
+	{
+		"code": "42",
+		"region" : "Loire",
+		"clients":[
+	]},
+	{
+		"code": "69",
+		"region" : "Rhône",
+		"clients":[
+		{
+			"nom"    : "Cabinet DELAYE",
+			"contact": "Mr Delaye",
+			"ville"  : "BRON"
+		},
+		{
+			"nom"    : "Cabinet DREVON",
+			"contact": "Mme Drevon",
+			"ville"  : "CONDRIEU"
+		},
+		{
+			"nom"    : "FLACH ASSUR",
+			"contact": "Mr Flacher",
+			"ville"  : "GIVORS"
+		},	
+		{
+			"nom"    : "AFD Assurances",
+			"contact": "Mr Degueurce",
+			"ville"  : "VENISSIEUX"
+		},
+		{
+			"nom"    : "Cabinet DURAND",
+			"contact": "Mr Durand",
+			"ville"  : "COURS LA VILLE"
+		},
+		{
+			"nom"    : "BERGER Assurances",
+			"contact": "Mrs Vittoz et Guedj",
+			"ville"  : "SAINT GENIS LAVAL"
+		},	
+		{
+			"nom"    : "TREFLE Assurances",
+			"contact": "Mme Herbst",
+			"ville"  : "VILLEFRANCHE SUR SAONE"
+		},
+		{
+			"nom"    : "ASSLAND",
+			"contact": ": Mme MONNIER",
+			"ville"  : "SAIN BEL"
+		},	
+		{
+			"nom"    : "ASSURIEL",
+			"contact": "Mr Reinhard",
+			"ville"  : "VILLEURBANNE"
+		},
+		{
+			"nom"    : "A. C. B.G.",
+			"contact": "Mr Guillot",
+			"ville"  : "LYON"
+		},	
+		{
+			"nom"    : "ALM Courtage",
+			"contact": "Mr Marie",
+			"ville"  : "LYON"
+		},	
+		{
+			"nom"    : "AJFV",
+			"contact": "Mr Vittoriano",
+			"ville"  : "LYON"
+		},	
+		{
+			"nom"    : "ARC Assurances",
+			"contact": "Mme Vaslin",
+			"ville"  : "LYON"
+		},	
+		{
+			"nom"    : "Cabinet BOULOT",
+			"contact": "Mr Boulot",
+			"ville"  : "LYON"
+		},	
+		{
+			"nom"    : "CAPE SANTE",
+			"contact": "Mrs Chemoul et Kahloun",
+			"ville"  : "LYON"
+		},	
+		{
+			"nom"    : "GACON & PERRIN",
+			"contact": "Mr Perrin",
+			"ville"  : "LYON"
+		},	
+		{
+			"nom"    : "GEPCA",
+			"contact": "Mr Martin",
+			"ville"  : "LYON"
+		},	
+		{
+			"nom"    : "JOUX",
+			"contact": "Mr Rigal",
+			"ville"  : "LYON"
+		}
+	]},
+	{
+		"code": "73",
+		"region" : "Savoie",
+		"clients":[
+	]},
+	{
+		"code": "74",
+		"region" : "Haute-Savoie",
+		"clients":[
+	]},
+	{
+		"code": "03",
+		"region" : "Allier",
+		"clients":[
+	]},
+	{
+		"code": "15",
+		"region" : "Cantal",
+		"clients":[
+	]},
+	{
+		"code": "43",
+		"region" : "Haute-Loire",
+		"clients":[
+	]},
+	{
+		"code": "63",
+		"region" : "Puy-de-Dôme",
+		"clients":[
+	]},
+	{
+		"code": "19",
+		"region" : "Corrèze",
+		"clients":[
+	]},
+	{
+		"code": "23",
+		"region" : "Creuse",
+		"clients":[
+	]},
+	{
+		"code": "87",
+		"region" : "Haute-Vienne",
+		"clients":[
+	]},
+	{
+		"code": "16",
+		"region" : "Charente",
+		"clients":[
+	]},
+	{
+		"code": "17",
+		"region" : "Charente-Maritime",
+		"clients":[
+	]},
+	{
+		"code": "79",
+		"region" : "Deux-Sèvres",
+		"clients":[
+	]},
+	{
+		"code": "86",
+		"region" : "Vienne",
+		"clients":[
+	]},
+	{
+		"code": "24",
+		"region" : "Dordogne",
+		"clients":[
+	]},
+	{
+		"code": "33",
+		"region" : "Gironde",
+		"clients":[
+	]},
+	{
+		"code": "40",
+		"region" : "Landes",
+		"clients":[
+	]},
+	{
+		"code": "47",
+		"region" : "Lot-et-Garonne",
+		"clients":[
+	]},
+	{
+		"code": "64",
+		"region" : "Pyrénées-Atlantiques",
+		"clients":[
+	]},
+	{
+		"code": "09",
+		"region" : "Ariège",
+		"clients":[
+	]},
+	{
+		"code": "12",
+		"region" : "Aveyron",
+		"clients":[
+	]},
+	{
+		"code": "31",
+		"region" : "Haute-Garonne",
+		"clients":[
+	]},
+	{
+		"code": "32",
+		"region" : "Gers",
+		"clients":[
+	]},
+	{
+		"code": "46",
+		"region" : "Lot",
+		"clients":[
+	]},
+	{
+		"code": "65",
+		"region" : "Hautes-Pyrénées",
+		"clients":[
+	]},
+	{
+		"code": "81",
+		"region" : "Tarn",
+		"clients":[
+	]},
+	{
+		"code": "82",
+		"region" : "Tarn-et-Garonne",
+		"clients":[
+	]},
+	{
+		"code": "11",
+		"region" : "Aude",
+		"clients":[
+	]},
+	{
+		"code": "30",
+		"region" : "Gard",
+		"clients":[
+	]},
+	{
+		"code": "34",
+		"region" : "Hérault",
+		"clients":[
+	]},
+	{
+		"code": "48",
+		"region" : "Lozère",
+		"clients":[
+	]},
+	{
+		"code": "66",
+		"region" : "Pyrénées-Orientales",
+		"clients":[
+	]},
+	{
+		"code": "04",
+		"region" : "Alpes-de-Haute-Provence",
+		"clients":[
+	]},
+	{
+		"code": "05",
+		"region" : "Hautes-Alpes",
+		"clients":[
+	]},
+	{
+		"code": "06",
+		"region" : "Alpes-Maritimes",
+		"clients":[
+	]},
+	{
+		"code": "13",
+		"region" : "Bouches-du-Rhône",
+		"clients":[
+	]},
+	{
+		"code": "83",
+		"region" : "Var",
+		"clients":[
+	]},
+	{
+		"code": "84",
+		"region" : "Vaucluse",
+		"clients":[
+	]},
+	{
+		"code": "2A",
+		"region" : "Corse-du-Sud",
+		"clients":[
+	]},
+	{
+		"code": "2B",
+		"region" : "Haute-Corse",
+		"clients":[
+	]}
+]} 

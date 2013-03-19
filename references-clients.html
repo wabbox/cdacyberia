@@ -21,10 +21,13 @@
     <![endif]-->
     <!-- Included JS -->
     <script src="js/modernizr.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery.flexipage.js"></script>
+    <script src="js/carte.js"></script>
     <script>
     function envoiJavaScript(str)
     { 
-        listeRegions(str);
+      listeRegions(str);
     }
     </script>
   <!--    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
@@ -100,11 +103,11 @@
       </object>
       <!--fin de l'animation Flash-->
       <article id="refClient">
-        <h3>Régions</h3>
-        <p class="dept">Isère (38)</p>
-        <ul>
-          
-        </ul>
+        <h3></h3>
+        <div class="gauche">
+          <p class="dept"></p>
+          <div id="listclients"></div>
+        </div>
         <div class="droite">
           <select id="regions" name="regions">
             <option value=""> Choisissez une région </option>
@@ -147,7 +150,7 @@
       <br class="clear">
     </footer>
   </div>
-  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-  <script src="js/carte.js"></script>
+
+  
 </body>
 </html>
