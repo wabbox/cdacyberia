@@ -59,6 +59,7 @@ $(document).ready(function() {
 	]};
 	$(':input').keyup(function() {
 		var idInput = $(this).attr("id");
+		var $idTooltip = $(this).parent().next('.tooltip');
 		
 		for (var i in data.input_test) {
 			$.each(regexList.regex_list, function(j, regex_list){
@@ -72,13 +73,13 @@ $(document).ready(function() {
 				} else {
 					$(this).css('color','green');
 					$(this).removeClass();
-					$(this).next('.tooltip').fadeOut();
+					$idTooltip.fadeOut();
 					$(this).addClass('correct');
 				}
 			} 
 		};
 	});	
-// $('.tooltip').hide();
+$('.tooltip').hide();
 $("form").submit(function(){
 	$("span").remove(".alert-box");
 	$("span").remove(".success-box");
@@ -86,34 +87,36 @@ $("form").submit(function(){
 	valid = true;
 
 	for (var i in data.input_test) {
-		id = data.input_test[i].id;
+		var $idInput = $(data.input_test[i].id);
+		var $idTooltip = $idInput.parent().next('.tooltip');
+
 		$.each(regexList.regex_list, function(j, regex_list){
 			regex = regex_list.regex;
 			return (regex_list.Name != data.input_test[i].regex);
 		});
-
 		if (data.input_test[i].required){
 				// pour différencier les champs vides et les champs mal rempli séparer la condition
-				if ($(id).val() == "" && !regex.test($(id).val())){
-					$(id).next('.tooltip').fadeIn();
-					$(id).addClass('incorrect');
+				if ($idInput.val() == "" && !regex.test($idInput.val())){
+					$idTooltip.fadeIn();
+					// $idTooltip.fadeIn();
+					$idInput.addClass('incorrect');
 					valid = false;
 				} else {
-					$(id).removeClass();
-					$(id).next('.tooltip').fadeOut();
-					$(id).addClass('correct');
+					$idInput.removeClass();
+					$idTooltip.fadeOut();
+					$idInput.addClass('correct');
 				}
 			} else {
-				if ($(id).val() != "" && !regex.test($(id).val())){
-					$(id).next('.tooltip').fadeIn();
-					$(id).addClass('incorrect');
+				if ($idInput.val() != "" && !regex.test($idInput.val())){
+					$idTooltip.fadeIn();
+					$idInput.addClass('incorrect');
 					valid = false;
-				} else if ($(id).val() == "") {
-					$(id).removeClass();
+				} else if ($idInput.val() == "") {
+					$idInput.removeClass();
 				} else {
-					$(id).removeClass();
-					$(id).next('.tooltip').fadeOut();
-					$(id).addClass('correct');
+					$idInput.removeClass();
+					$idTooltip.fadeOut();
+					$idInput.addClass('correct');
 				}
 			}
 		};		
@@ -129,9 +132,9 @@ $("form").submit(function(){
 					if(json.reponse == 'mailTrue') {
 						$('<span class="success-box">Votre message a bien été envoyé</span>').prependTo($('.block-button'));
 					}else if(json.reponse == 'noRequired') {
-						$('<span class="alert-box">Les informations ont mal été informées</span>').prependTo($('.block-button'));
+						$('<span class="alert-box">Votre message n\'a pas pu être envoyé. Vérifier vos informations</span>').prependTo($('.block-button'));
 					}else {
-						$('<span class="alert-box">Votre message n\'a pu être envoyé</span>').prependTo($('.block-button'));
+						$('<span class="alert-box">Votre message n\'a pas pu être envoyé</span>').prependTo($('.block-button'));
 					}
 				},
 			/*error: function(jqXHR, exception) {

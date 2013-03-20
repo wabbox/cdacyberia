@@ -24,8 +24,6 @@ form {
 	/* background-color: #808080; */
 	width: 90%;
 	margin: 0 auto;
-
-
 }
 .gauche {
 	/* background-color: #C0C0C0; */
@@ -37,18 +35,19 @@ form {
 	float: right;
 	width: 42%;
 	/*position: relative;
-	 margin-left: 60%; */
+	margin-left: 60%; */
 }
 .droite input {
 	width: 70%;
 }
 label {
-    display: block;
-    width: 110px;
-    float: left;
-    cursor: pointer;
+	display: block;
+	width: 110px;
+	float: left;
+	cursor: pointer;
 }
 .form-required {
+	font-size: 0.8em;
 	color: #AF0105;
 }
 form p {
@@ -85,14 +84,21 @@ form p {
 	font-size: 0.875em;
 	color: #fff;
 	padding: 10px;
-
 	border-radius: 3px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 }
+.alert-box, .success-box {
+	display: block;
+	float: left;
+}
+.alert-box {
+	width: 280px;
+}
 .tooltip {
-  margin-left: 110px;
-  padding: 2px 4px;
+	display: none;
+	margin-left: 110px;
+	padding: 2px 4px;
 }
 .alert-box, .tooltip {
 	background-color: #E51A2E;
@@ -126,6 +132,3 @@ form p {
 	-ms-box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
 	box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
 }
-/*.tooltip {
-	display: none;
-}*/
