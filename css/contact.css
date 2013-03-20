@@ -126,6 +126,6 @@ form p {
 	-ms-box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
 	box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
 }
-.tooltip {
+/*.tooltip {
 	display: none;
-}
+}*/

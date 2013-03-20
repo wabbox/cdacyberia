@@ -77,27 +77,8 @@ $(document).ready(function() {
 				}
 			} 
 		};
-		/*$.each(data.input_test, function(i, data){
-			$.each(regexList.regex_list, function(j, regex_list){
-				regex = regex_list.regex;
-				return (regex_list.Name != data.regex);
-			});
-			// if (data.Name == id) {};
-			return (data.Name != id);
-		});
-
-		console.log(regex);
-		if (!regex.test($(this).val())){
-			$(this).css('color','#E51A2E');
-		} else {
-			$(this).css('color','green');
-			$(this).removeClass();
-			$(this).next('.tooltip').fadeOut();
-			$(this).addClass('correct');
-		}*/
-
 	});	
-$('.tooltip').hide();
+// $('.tooltip').hide();
 $("form").submit(function(){
 	$("span").remove(".alert-box");
 	$("span").remove(".success-box");

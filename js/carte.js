@@ -48,6 +48,7 @@ $(document).ready(function(){
 		//met à jour la liste des clients
 		var nbclients;
 		var newcontent = '';
+		var perpage = 5;
 		$.getJSON("js/clients.json", function(data) {
             //selection du departement
             dept = $.grep(data.departements, function(element, index){
@@ -56,41 +57,48 @@ $(document).ready(function(){
 	        //liste des Clients
 	        $.each(dept, function(i, dept){
 	        	nbclients = dept.clients.length;
+	        	//on met a jour l'affichage du département
+	        	$('.dept').text(dept.region+" ("+dept.code+")");
 	        	if (nbclients>0) {
 	        		newcontent += '<ul class="listClients">';
-	        	// on ajoute met à jour la liste
-	        	for (var i = 0; i < dept.clients.length; i++) {
-	        		newcontent += '<li><p class="nomClient">'+dept.clients[i].nom+' :</p>';
-	        		newcontent += '<p class="contactClient">'+dept.clients[i].contact+'</p>';
-	        		newcontent += '<p class="villeClient">'+dept.clients[i].ville+'</p></li>';
-	        	}
-	        	newcontent += '</ul>';
-	        	$('#listclients').html(newcontent);
-	        	$('.listClients').flexipage({
-					perpage:3,
-					// pager : false,
-					// navigation : true,
-					next_txt: "Continue »",
-   					prev_txt: "« Back"
-				});
-	        	// $('#refClient .dept').append(dept.region+" ("+dept.code+")");
-	        } else{
-	        	newcontent += '<p class="ClientNull">Il n\'a pas encore de client référencié dans ce département</p>';
-	       		$('#listclients').html(newcontent);
-	        };
-	    });
-    });
-
-
-}
+		        	// on ajoute met à jour la liste
+		        	for (var i = 0; i < dept.clients.length; i++) {
+		        		newcontent += '<li><p class="nomClient">'+dept.clients[i].nom+' :</p>';
+		        		newcontent += '<p class="contactClient">'+dept.clients[i].contact+'</p>';
+		        		newcontent += '<p class="villeClient">'+dept.clients[i].ville+'</p></li>';
+		        	}
+		        	newcontent += '</ul>';
+		        	$('#listClients').html(newcontent);
+		        	if (nbclients>perpage) {
+		        		$('.listClients').flexipage({
+		        			perpage: perpage,
+							pager : false,
+							navigation : true,
+						});
+		        	};
+		        } else {
+		        	newcontent += '<p class="clientNull">Il n\'a pas encore de client référencié dans ce département</p>';
+		        	$('#listClients').html(newcontent);
+		        };
+		    });
+		});
+	}
 	// à la sélection d une région dans la liste
 	$regions.on('change', function() {
     	var str = $(this).val(); // on récupère la valeur de la région
     	listeRegions(str);
+    	//on scroll pour bien afficher la div
+    	$('html, body').animate({  
+			scrollTop:$('#content section').offset().top-20+'px'  
+		}, 'slow');
     });	
 	// à la sélection d un département dans la liste
 	$departements.on('change', function() {
     	var code = $(this).val(); // on récupère la valeur de la région
     	listeClients(code);
+    	//on scroll pour bien afficher la div
+    	$('html, body').animate({  
+			scrollTop:$('#content section').offset().top-20+'px'  
+		}, 'slow');
     });
 });		
