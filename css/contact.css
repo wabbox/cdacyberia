@@ -28,17 +28,26 @@ form {
 .gauche {
 	/* background-color: #C0C0C0; */
 	float: left;
-	width: 42%;
+	width: 40%;
 }
 .droite {
 	/* background-color: #400080; */
 	float: right;
-	width: 42%;
-	/*position: relative;
-	margin-left: 60%; */
+	width: 40%;
+	/*margin-left: 10%;
+	position: relative;
+	*/
 }
 .droite input {
-	width: 70%;
+	/*width: 70%;*/
+}
+.form-required {
+	font-size: 0.8em;
+	color: #AF0105;
+}
+form p {
+	/*position: relative;*/
+	margin: 20px 0 10px;
 }
 label {
 	display: block;
@@ -46,25 +55,22 @@ label {
 	float: left;
 	cursor: pointer;
 }
-.form-required {
-	font-size: 0.8em;
-	color: #AF0105;
-}
-form p {
-	margin: 20px 0 10px;
-}
 [type="text"], textarea, select {
 	display: block;
 	border: 1px solid #999;
 	border-radius: 4px;
 	line-height: 1.5em;
 	box-shadow: 1px 1px 8px #AAA inset;
+	margin-left: 110px; 
 }
 [type="text"] {
-	width: 70%;
+	width: 65%;
 }
 #message {
-	width: 87%;
+	width: 85.5%;
+}
+[type="submit"] {
+	margin-right: 1em;
 }
 [type="submit"], [type="reset"] {
 	padding: 0 20px;
@@ -95,10 +101,19 @@ form p {
 .alert-box {
 	width: 280px;
 }
+.gauche .tooltip, .droite .tooltip {
+	width: 62.8%;
+}
 .tooltip {
-	display: none;
+	display: block;
 	margin-left: 110px;
 	padding: 2px 4px;
+	line-height: 1em !important;
+	width: 25%;
+	/*float: left;
+	 position: absolute;
+	bottom: 0px;
+	left: 110px; */
 }
 .alert-box, .tooltip {
 	background-color: #E51A2E;
@@ -132,3 +147,58 @@ form p {
 	-ms-box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
 	box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
 }
+@media only screen and (max-width: 800px) {
+	.tooltip {
+		margin-left: 0;
+		width: 96%;
+	}
+	.gauche .tooltip {
+		width: 75%;
+	}
+	.droite .tooltip {
+		width: 91%;
+	}
+	[type="text"], textarea, select {
+		margin-left: 0; 
+	}
+	[type="text"] {
+		width: 80%;
+	}
+	#message {
+		width: 98%;
+	}
+	label {
+		float: none;
+	}
+	.droite p {
+		padding-left: 20%;
+	}
+	.droite [type="text"] {
+		width: 98%;
+	}
+}
+@media only screen and (max-width: 480px) {
+	[type="text"], textarea, .droite p {
+		width: 100%!important;
+	}
+	.tooltip {
+		width: 98%;
+	}
+	.gauche .tooltip, .droite .tooltip {
+		width: 96%!important;
+	}
+	.gauche, .droite {
+		float: none;
+		width: 100%;
+	}
+	fieldset {
+		margin: 0;
+	}
+	.droite p {
+		padding-left: 0;
+	}
+	/*.droite [type="text"] {
+		width: 80%;
+	}*/
+}
+

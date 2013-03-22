@@ -15,6 +15,30 @@ $(document).ready(function(){
         	};
         });
 	});
+	$('#vmap').vectorMap({
+        map: 'france_fr',
+        hoverOpacity: 0.5,
+        hoverColor: false,
+        // backgroundColor: "",
+        colors: couleurs,
+        borderColor: "#000",
+        borderWidth: .5,
+        borderOpacity:.5,
+        backgroundColor: 'transparent',
+            regionStyle: {
+              initial: {
+                fill: '#8d8d8d'
+              }
+            },
+        normalizeFunction: 'polynomial',
+        enableZoom: true,
+        showTooltip: true,
+        onRegionClick: function(element, code, region)
+        {
+          console.log("element : "+element+". code : "+code+". region : "+region+".");
+          listeClients(code);
+        }
+      });
 	//on met tout à jour avec la région par défault
 	listeRegions($regionDefault);
 

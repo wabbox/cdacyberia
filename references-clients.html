@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="css/base.css" media="all">
   <!-- Included CSS spécifique à la page -->
   <link rel="stylesheet" href="css/clients.css" media="all"> 
-  <!--  <link rel="stylesheet" href="css/jqvmap.css" media="all"> -->
+  <link rel="stylesheet" href="css/jqvmap.css" media="all">
   <!--[if lte IE 8]>
     <link rel="stylesheet" href="css/ie.css" />
     <![endif]-->
@@ -25,36 +25,25 @@
     <script src="js/jquery.flexipage.js"></script>
     <script src="js/carte.js"></script>
     <script>
-    function envoiJavaScript(str)
+    function envoiJavaScript(str){
+      /*var swf = $('#swf_object').get(0);
+    console.log(window['carte-france']);*/
+    var swf = $('#carte-france').get(0);
+    console.log("retour carte : "+swf);
+    }
+    /*function envoiJavaScript(str)
     { 
       listeRegions(str);
-    }
+    }*/
     </script>
-  <!--    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-  <script src="js/jqvmap/jquery.vmap.js"></script>
+   <script src="js/jqvmap/jquery.vmap.js"></script>
     <script src="js/jqvmap/jquery.vmap.france.js"></script>
     <script src="js/jqvmap/jquery.vmap.colorsFrance.js"></script>
     <script>                                              
     $(document).ready(function() {
-      $('#vmap').vectorMap({
-        map: 'france_fr',
-        hoverOpacity: 0.5,
-        hoverColor: false,
-        backgroundColor: "#f4f4f4",
-        colors: couleurs,
-        borderColor: "#000",
-        borderWidth: .5,
-        borderOpacity:.5,
-        normalizeFunction: 'polynomial',
-        enableZoom: true,
-        showTooltip: true,
-        onRegionClick: function(element, code, region)
-        {
-          console.log("element : "+element+". code : "+code+". region : "+region+".");
-        }
-      });
+      
     });
-  </script> -->
+  </script>
 </head>
 <body>
   <!-- header -->
@@ -90,18 +79,18 @@
   </div>
   <!-- content -->
   <div id="content">
-    <!-- <div id="vmap"  style="width: 700px; height: 600px;" class="map_index"></div> -->     
     <header>
       <h3>Références Clients</h3>
       <p>Vous trouverez ici toutes nos références clients en France. Cliquez sur une région pour afficher les références.</p>
     </header>
     <section>
-      <!--début de l'animation Flash-->
+      <div id="vmap" class="map_index"></div>
+      <!--début de l'animation Flash
       <object type="application/x-shockwave-flash" id="carte-france" data="flash/carte-france.swf">
         <param name="movie" value="flash/carte-france.swf" />
         <param name="allowScriptAccess" value="sameDomain" />
       </object>
-      <!--fin de l'animation Flash-->
+      fin de l'animation Flash-->
       <article id="refClient">
         <div class="gauche">
           <h3></h3>

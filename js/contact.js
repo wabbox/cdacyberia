@@ -57,9 +57,13 @@ $(document).ready(function() {
 		"regex": /^((0[1-9])|([1-8][0-9])|(9[0-8])|(2A)|(2B))[0-9]{3}$/
 	}
 	]};
+
+	$('.tooltip').hide();
+
 	$(':input').keyup(function() {
 		var idInput = $(this).attr("id");
-		var $idTooltip = $(this).parent().next('.tooltip');
+		var $idTooltip = $(this).next('.tooltip');
+		var $nextp = $(this).parent().next('p');
 		
 		for (var i in data.input_test) {
 			$.each(regexList.regex_list, function(j, regex_list){
@@ -74,21 +78,23 @@ $(document).ready(function() {
 					$(this).css('color','green');
 					$(this).removeClass();
 					$idTooltip.fadeOut();
+					$nextp.css('margin-top', '20px');
 					$(this).addClass('correct');
 				}
 			} 
 		};
 	});	
-$('.tooltip').hide();
 $("form").submit(function(){
 	$("span").remove(".alert-box");
 	$("span").remove(".success-box");
-
+	$('.tooltip').hide();
+	$('form p').css('margin-top', '20px');
 	valid = true;
 
 	for (var i in data.input_test) {
 		var $idInput = $(data.input_test[i].id);
-		var $idTooltip = $idInput.parent().next('.tooltip');
+		var $idTooltip = $idInput.next('.tooltip');
+		var $nextp = $idInput.parent().next('p');
 
 		$.each(regexList.regex_list, function(j, regex_list){
 			regex = regex_list.regex;
@@ -98,17 +104,19 @@ $("form").submit(function(){
 				// pour différencier les champs vides et les champs mal rempli séparer la condition
 				if ($idInput.val() == "" && !regex.test($idInput.val())){
 					$idTooltip.fadeIn();
-					// $idTooltip.fadeIn();
+					$nextp.css('margin-top', '10px');
 					$idInput.addClass('incorrect');
 					valid = false;
 				} else {
 					$idInput.removeClass();
 					$idTooltip.fadeOut();
+					$nextp.css('margin-top', '20px');
 					$idInput.addClass('correct');
 				}
 			} else {
 				if ($idInput.val() != "" && !regex.test($idInput.val())){
 					$idTooltip.fadeIn();
+					$nextp.css('margin-top', '10px');
 					$idInput.addClass('incorrect');
 					valid = false;
 				} else if ($idInput.val() == "") {
@@ -116,6 +124,7 @@ $("form").submit(function(){
 				} else {
 					$idInput.removeClass();
 					$idTooltip.fadeOut();
+					$nextp.css('margin-top', '20px');
 					$idInput.addClass('correct');
 				}
 			}

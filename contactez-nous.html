@@ -66,44 +66,50 @@
             <p>
               <label for="nom">Nom : <span class="form-required" title="Ce champ est obligatoire.">*</span></label>
               <input type="text" name="nom" id="nom" class="obligatoire">
-            </p> 
               <span class="tooltip">Entrez votre nom </span>
+            <span class="clear"></span>
+            </p> 
             <p>
               <label for="prenom">Prénom : <span class="form-required" title="Ce champ est obligatoire.">*</span></label>
               <input type="text" name="prenom" id="prenom" class="obligatoire">
-            </p>
               <span class="tooltip">Entrez votre prénom</span>
+              <span class="clear"></span>
+            </p>
             <p>
               <label for="societe">Société :</label>
               <input type="text" name="societe" id="societe">
+              <span class="clear"></span>
             </p>
             <p>
               <label for="email">E-mail : <span class="form-required" title="Ce champ est obligatoire.">*</span></label>
               <input type="text" name="email" id="email" class="obligatoire">
-            </p>
               <span class="tooltip">Entrez un e-mail vallide</span>
+              <span class="clear"></span>
+            </p>
           </fieldset>
           <fieldset class="droite">
-            <div class="fl-r">
-              <p>
-                <label for="adresse">Adresse :</label>
-                <input type="text" name="adresse" id="adresse">
-              </p>
-              <p>
-                <label for="codePostal">Code postal :</label>
-                <input type="text" name="codePostal" id="codePostal">
-              </p>
-                <span class="tooltip">Entrez un code postal valide</span>
-              <p>
-                <label for="ville">Ville :</label>
-                <input type="text" name="ville" id="ville">
-              </p>
-              <p>
-                <label for="telephone">Téléphone :</label>
-                <input type="text" name="telephone" id="telephone">
-              </p>
-                <span class="tooltip">Entrez un numéro valide</span>
-            </div>
+            <p>
+              <label for="adresse">Adresse :</label>
+              <input type="text" name="adresse" id="adresse">
+              <span class="clear"></span>
+            </p>
+            <p>
+              <label for="codePostal">Code postal :</label>
+              <input type="text" name="codePostal" id="codePostal">
+              <span class="tooltip">Entrez un code postal valide</span>
+              <span class="clear"></span>
+            </p>
+            <p>
+              <label for="ville">Ville :</label>
+              <input type="text" name="ville" id="ville">
+              <span class="clear"></span>
+            </p>
+            <p>
+              <label for="telephone">Téléphone :</label>
+              <input type="text" name="telephone" id="telephone">
+              <span class="tooltip">Entrez un numéro valide</span>
+              <span class="clear"></span>
+            </p>
           </fieldset>
           <br class="clear">
           <fieldset>
@@ -116,17 +122,18 @@
                 <option value="Demande de rendez-vous">Demande de rendez-vous</option>
                 <option value="Autres">Autres</option>
               </select>
+              <span class="clear"></span>
             </p>
             <p>
               <label for="message">Message : <span class="form-required" title="Ce champ est obligatoire.">*</span></label>
               <textarea name="message" id="message" cols="30" rows="5"></textarea>
-            </p>
               <span class="tooltip">Entrez un message</span>
-              <p class="form-required">* Informations requises</p>
+              <span class="clear"></span>
+            </p>
+            <p class="form-required">* Informations requises</p>
             <p class="block-button">
               <input type="submit" value="Envoyer" id="envoyer" name="envoi"/>
               <input type="reset" value="Effacer" />
-              <br class="clear">
             </p>
           </fieldset>
         </form>

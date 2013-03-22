@@ -37,11 +37,11 @@
         $.fn.vectorMap = function (options){
 
                 var defaultParams = {
-                        map: 'world_en',
-                        backgroundColor: '#a5bfdd',
-                        color: '#f4f3f0',
-                        hoverColor: '#c9dfaf',
-                        selectedColor: '#c9dfaf',
+                        map: 'fr_merc_en',
+                        backgroundColor: '#006EAE',
+                        color: '#FFFFFF',
+                        hoverColor: '#CADFB0',
+                        selectedColor: 'rgb(219,237,255)',
                         scaleColors: ['#b6d6ff', '#005ace'],
                         normalizeFunction: 'linear',
                         enableZoom: true,
@@ -522,7 +522,7 @@
                                                 map.label.show();
                                                 map.labelWidth = map.label.width();
                                                 map.labelHeight = map.label.height();
-                                                map.label2.show();
+                                                // map.label2.show();
                                         }
                                 }
                         }
