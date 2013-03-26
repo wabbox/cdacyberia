@@ -1,7 +1,7 @@
 {"regions":[
 {
-	"id_region" : "nord_pas_de_calais",
-	"name_region" : "Nord Pas de Calais",
+	"id_region" : "FR-O",
+	"name_region" : "Nord-Pas-de-Calais",
 	"departements":[
 	{
 		"code_dep": "59",
@@ -13,7 +13,7 @@
 	}]	
 },
 {	
-	"id_region" : "picardie",
+	"id_region" : "FR-S",
 	"name_region" : "Picardie",
 	"departements":[
 	{
@@ -31,8 +31,8 @@
 	]
 },
 {
-	"id_region" : "haute_normandie",
-	"name_region" : "Haute Normandie",
+	"id_region" : "FR-Q",
+	"name_region" : "Haute-Normandie",
 	"departements":[
 	{
 		"code_dep": "27",
@@ -45,8 +45,8 @@
 	]
 },
 {
-	"id_region" : "basse_normandie",
-	"name_region" : "Basse Normandie",
+	"id_region" : "FR-P",
+	"name_region" : "Basse-Normandie",
 	"departements":[
 	{
 		"code_dep": "14",
@@ -63,7 +63,7 @@
 	]
 },
 {
-	"id_region" : "bretagne",
+	"id_region" : "FR-E",
 	"name_region" : "Bretagne",
 	"departements":[
 	{
@@ -85,8 +85,8 @@
 	]
 },
 {
-	"id_region" : "ile_france",
-	"name_region" : "Ile de France",
+	"id_region" : "FR-J",
+	"name_region" : "\u00cele-de-France",
 	"departements":[
 	{
 		"code_dep": "75",
@@ -123,7 +123,7 @@
 	]
 },	
 {
-	"id_region" : "centre",
+	"id_region" : "FR-F",
 	"name_region" : "Centre",
 	"departements":[
 	{
@@ -153,7 +153,7 @@
 	]
 },
 {
-	"id_region" : "pays_loire",
+	"id_region" : "FR-R",
 	"name_region" : "Pays de la Loire",
 	"departements":[
 	{
@@ -179,7 +179,7 @@
 	]
 },	
 {
-	"id_region" : "bourgogne",
+	"id_region" : "FR-D",
 	"name_region" : "Bourgogne",
 	"departements":[
 	{
@@ -201,8 +201,8 @@
 	]
 },	
 {
-	"id_region" : "champagne_ardenne",
-	"name_region" : "Champagne Ardenne",
+	"id_region" : "FR-G",
+	"name_region" : "Champagne-Ardenne",
 	"departements":[
 	{
 		"code_dep": "08",
@@ -223,7 +223,7 @@
 	]
 },
 {
-	"id_region" : "lorraine",
+	"id_region" : "FR-M",
 	"name_region" : "Lorraine",
 	"departements":[
 	{
@@ -245,7 +245,7 @@
 	]
 },
 {
-	"id_region" : "alsace",
+	"id_region" : "FR-A",
 	"name_region" : "Alsace",
 	"departements":[
 	{
@@ -259,8 +259,8 @@
 	]
 },
 {
-	"id_region" : "franche_comte",
-	"name_region" : "Franche Comté",
+	"id_region" : "FR-I",
+	"name_region" : "Franche-Comt\u00e9",
 	"departements":[
 	{
 		"code_dep": "25",
@@ -281,8 +281,8 @@
 	]
 },
 {
-	"id_region" : "rhones_alpes",
-	"name_region" : "Rhône Alpes",
+	"id_region" : "FR-V",
+	"name_region" : "Rh\u00f4ne-Alpes",
 	"departements":[
 	{
 		"code_dep": "01",
@@ -319,7 +319,7 @@
 	]
 },
 {
-	"id_region" : "auvergne",
+	"id_region" : "FR-C",
 	"name_region" : "Auvergne",
 	"departements":[
 	{
@@ -341,7 +341,7 @@
 	]
 },
 {
-	"id_region" : "limousin",
+	"id_region" : "FR-L",
 	"name_region" : "Limousin",
 	"departements":[
 	{
@@ -359,8 +359,8 @@
 	]
 },
 {
-	"id_region" : "poitou_charentes",
-	"name_region" : "Poitou Charentes",
+	"id_region" : "FR-T",
+	"name_region" : "Poitou-Charentes",
 	"departements":[
 	{
 		"code_dep": "16",
@@ -381,7 +381,7 @@
 	]
 },
 {
-	"id_region" : "aquitaine",
+	"id_region" : "FR-B",
 	"name_region" : "Aquitaine",
 	"departements":[
 	{
@@ -407,8 +407,8 @@
 	]
 },
 {
-	"id_region" : "midi_pyrenees",
-	"name_region" : "Midi Pyrénées",
+	"id_region" : "FR-N",
+	"name_region" : "Midi-Pyr\u00e9n\u00e9es",
 	"departements":[
 	{
 		"code_dep": "09",
@@ -445,8 +445,8 @@
 	]
 },
 {
-	"id_region" : "languedoc_roussillon",
-	"name_region" : "Languedoc Roussillon",
+	"id_region" : "FR-K",
+	"name_region" : "Languedoc-Roussillon",
 	"departements":[
 	{
 		"code_dep": "11",
@@ -471,8 +471,8 @@
 	]
 },
 {
-	"id_region" : "paca",
-	"name_region" : "Provence Alpes Côte d'Azur",
+	"id_region" : "FR-U",
+	"name_region" : "Provence-Alpes-C\u00f4te-d'Azur",
 	"departements":[
 	{
 		"code_dep": "04",
@@ -501,7 +501,7 @@
 	]
 },
 {
-	"id_region" : "corse",
+	"id_region" : "FR-H",
 	"name_region" : "Corse",
 	"departements":[
 	{

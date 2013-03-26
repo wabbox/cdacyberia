@@ -24,77 +24,56 @@
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="js/jquery.flexipage.js"></script>
     <script src="js/carte.js"></script>
-    <script>
-    function envoiJavaScript(str){
-      /*var swf = $('#swf_object').get(0);
-    console.log(window['carte-france']);*/
-    var swf = $('#carte-france').get(0);
-    console.log("retour carte : "+swf);
-    }
-    /*function envoiJavaScript(str)
-    { 
-      listeRegions(str);
-    }*/
-    </script>
-   <script src="js/jqvmap/jquery.vmap.js"></script>
-    <script src="js/jqvmap/jquery.vmap.france.js"></script>
+   
+    <script src="js/jqvmap/jquery.vmap.js"></script>
+    <script src="js/jqvmap/jquery-jvectormap-fr-merc-en.js"></script>
     <script src="js/jqvmap/jquery.vmap.colorsFrance.js"></script>
-    <script>                                              
-    $(document).ready(function() {
-      
-    });
-  </script>
-</head>
-<body>
-  <!-- header -->
-  <div class="header-bg">
-    <header>
-      <article class="logo">
-        <a href="index.html">
-          <h1>CDA Informatique</h1>
-        </a>
-      </article>
-      <div class="vcard">
-        <div class="adr">
-          <div class="street-address">9 rue St Eusèbe</div>
-          <span class="postal-code">69003 </span><span class="locality">LYON</span>
-          <div class="tel">Tel 04 37 91 26 00</div>
-          <div class="fax">Fax 04 37 91 26 01</div>
-          <a class="email" href="mailto:support@cda-informatique.fr">support@cda-informatique.fr</a>
+    
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header-bg">
+      <header>
+        <article class="logo">
+          <a href="index.html">
+            <h1>CDA Informatique</h1>
+          </a>
+        </article>
+        <div class="vcard">
+          <div class="adr">
+            <div class="street-address">9 rue St Eusèbe</div>
+            <span class="postal-code">69003 </span><span class="locality">LYON</span>
+            <div class="tel">Tel 04 37 91 26 00</div>
+            <div class="fax">Fax 04 37 91 26 01</div>
+            <a class="email" href="mailto:support@cda-informatique.fr">support@cda-informatique.fr</a>
+          </div>
         </div>
-      </div>
-      <br class="clear">
-    </header>
-    <!-- menu -->
-    <nav>
-      <ul>
-        <li><a href="qui-sommes-nous.html">Qui sommes nous ?</a></li>
-        <li><a href="references-clients.html">Références Clients</a></li>
-        <li><a href="partenaires.html">Partenaires</a></li>
-        <li><a href="telechargements.html">Téléchargements logiciels</a></li>
-        <li><a href="documentation.html">Documentation</a></li>
-        <li><a href="contactez-nous.html">Contactez nous</a></li>
-      </ul>
-    </nav>
-  </div>
-  <!-- content -->
-  <div id="content">
-    <header>
-      <h3>Références Clients</h3>
-      <p>Vous trouverez ici toutes nos références clients en France. Cliquez sur une région pour afficher les références.</p>
-    </header>
-    <section>
-      <div id="vmap" class="map_index"></div>
-      <!--début de l'animation Flash
-      <object type="application/x-shockwave-flash" id="carte-france" data="flash/carte-france.swf">
-        <param name="movie" value="flash/carte-france.swf" />
-        <param name="allowScriptAccess" value="sameDomain" />
-      </object>
-      fin de l'animation Flash-->
+        <br class="clear">
+      </header>
+      <!-- menu -->
+      <nav>
+        <ul>
+          <li><a href="qui-sommes-nous.html">Qui sommes nous ?</a></li>
+          <li><a href="references-clients.html">Références Clients</a></li>
+          <li><a href="partenaires.html">Partenaires</a></li>
+          <li><a href="telechargements.html">Téléchargements logiciels</a></li>
+          <li><a href="documentation.html">Documentation</a></li>
+          <li><a href="contactez-nous.html">Contactez nous</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- content -->
+    <div id="content">
+      <header>
+        <h3>Références Clients</h3>
+        <p>Vous trouverez ici toutes nos références clients en France. Cliquez sur une région pour afficher les références.</p>
+      </header>
+      <section>
+        <div id="vmap" class="map_index" style="width: 700; height: 610px"></div>
       <article id="refClient">
         <div class="gauche">
           <h3></h3>
-         <p class="dept"></p> 
+          <p class="dept"></p> 
         </div>
         <div class="droite">
           <select id="regions" name="regions">

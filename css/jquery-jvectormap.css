@@ -1,3 +1,6 @@
+#vmap .rvml{
+left:1px; /* fix IE7 too much right shift */
+}
 .jvectormap-label {
     position: absolute;
     display: none;
