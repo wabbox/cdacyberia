@@ -24,13 +24,14 @@ $(document).ready(function(){
         "stroke-opacity": 1
       },
       hover: {
-        "fill-opacity": 0.8
+        fill: '#45A429'
       },
       selected: {
         //bleu fill: '#3573B4'
         fill: '#45A429'
       },
       selectedHover: {
+        "fill-opacity": 0.9
       }
     },
     series: {
