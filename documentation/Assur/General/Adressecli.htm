@@ -1,0 +1,110 @@
+<HTML>
+<!--This file created 16:54  27/05/02 by Claris Home Page version 3.0-->
+<!--This file created 17:00  27/05/02 by Claris Home Page version 3.0-->
+<HEAD>
+   <TITLE>adressecli</TITLE>
+   <META NAME=GENERATOR CONTENT="Microsoft FrontPage 6.0">
+   <X-CLARIS-WINDOW TOP=25 BOTTOM=597 LEFT=4 RIGHT=728>
+   <X-CLARIS-TAGVIEW MODE=minimal>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<P><TABLE BORDER=1 WIDTH=640>
+   <TR>
+      <TH ALIGN=center WIDTH=640>
+         <font size="+2" color="#0000FF"><b>ADRESSE CLIENT</b></font>
+         <p><font size="+2" color="#0000FF"><b>ET PARAMETRAGE DES COURRIERS</b></font>
+      </TH>
+   </TR>
+</TABLE>
+ <TABLE BORDER=1 WIDTH=640>
+   <TR>
+      <TD HEIGHT=75>
+         <P><A HREF="../../SommaireDoc.htm">Documentation Generale
+         produits</A></P>
+         
+         <P><A HREF="../SommaireAssur.htm">Sommaire Documentation
+         e_Assur</A></P>
+         
+         <P><a href="SommaireProduction.htm">Sommaire
+         Production</a></P>
+         <P><a href="SommaireParametres.htm"><br>
+         Sommaire Paramètres</a></P>
+      </TD>
+   </TR>
+</TABLE>
+ <TABLE BORDER=1 WIDTH=640>
+   <TR>
+      <TD WIDTH=640>
+         <p>On trouve des adresses dans deux endroits différents :<p>- sur le
+         client, on peut saisir une adresse 1 et une adresse 2<br>
+         -&nbsp; sur chaque contrat, on peut saisir une adresse de querabilité
+      </TD>
+   </TR>
+</TABLE>
+<TABLE BORDER=1 WIDTH=642 height="682">
+   <TR>
+      <TD width="626" height="284">
+         <b>LES ADRESSES DANS LE CLIENT</b>
+         <p>Vous pouvez saisir une seule adresse pour le client. Dans ce cas,
+         tous les courriers seront envoyés à cette adresse.<br>
+         Vous pouvez saisir 2 adresses pour le client. Dans ce cas, vous pouvez
+         préciser la seconde adresse, en cliquant sur la bande 2eme adresse et
+         en cochant &quot;c'est l'adresse du client&quot; et préciser les
+         dates.</p>
+         <p>Vous pouvez donc vous trouver dans 3 situations :</p>
+         <p>- Vous saisissez 2 adresses mais vous ne cochez pas la boite à
+         cocher. Les courriers seront envoyés à l'adresse 1.<br>
+         - Vous saisissez 2 adresses,vous cochez la boite à cocher, mais vous
+         ne saisissez pas de dates. Les courriers seront toujours envoyés à
+         l'adresse 2.<br>
+         -Vous cochez la boite à cocher, et vous mettez une date de début et
+         unedate de fin : les courriers seront envoyés à l'adresse 2 dans
+         l'intervalle de dates, et à l'adresse 1 en dehors de cet intervalle.
+         
+      </TD>
+   </TR>
+   <TR>
+      <TD width="626" height="190">
+         <b><font color="#FF00FF">LES ADRESSES DANS LES CONTRATS - SINISTRES -
+         QUITTANCES</font></b>
+         <p>Dans chaque contrat, vous pouvez saisir une adresse de querabilité,
+         avec des dates de validité.Cette adresse de querabilité sera
+         utilisée pour les courriers envoyés à partir d'un contrat, d'une
+         quittance ou d'un sinistre.</p>
+         <p>S'il n'y a pas d'adresse de querabilité, ou si ladate du jour est
+         en dehors de l'intervalle de date, e-assur ira chercher l'adresse dans
+         la fiche client, selon les principes définis ci-dessus, pour les
+         adresses clients.</p>
+         <p>&nbsp;
+      </TD>
+   </TR>
+   <TR>
+      <TD width="626" height="190">
+         <p align="center"><b><font color="#FF00FF">LE PARAMETRAGE DES COURRIERS</font></b></p>
+         <p>Pour pouvoir utiliser cette gestion des adresses, vous ne devez pas
+         utiliser les champs de la base de données puisque ceux ci peuvent
+         être différents.</p>
+         <p>Vous devez donc paramétrer des variables calculées par le
+         logiciel. Ce paramétrage se fait en gestion des courriers.</p>
+         <p>En version&nbsp; 6 : Menu Base ---&gt; Insérer une commande 4D<br>
+         En version è : Menu Insertion ---&gt; Expression 4D ---&gt; cliquer sur
+         onglet&nbsp; Expression</p>
+         <p>Saisissez les variables suivantes&nbsp; pour l'adresse du client</p>
+         <p>v_adr_cli_1&nbsp;&nbsp; Titre Nom Prénom<br>
+         v_adr_cli_2&nbsp;&nbsp; Adresse sur 1<br>
+         v_adr_cli_3&nbsp;&nbsp; Adresse sur 2<br>
+         v_adr_cli_4&nbsp;&nbsp; Code postal&nbsp; et ville<br>
+         v_adr_cli_5&nbsp;&nbsp; Pays<br>
+         v_adr_cli_6&nbsp;&nbsp; Représentant<br>
+         v_adr_cli_7&nbsp;&nbsp; Enseigne
+      </TD>
+   </TR>
+</TABLE>
+<table border="1" width="641">
+  <tr>
+    <td width="631">&nbsp;
+    </td>
+  </tr>
+</table>
+</BODY>
+</HTML>

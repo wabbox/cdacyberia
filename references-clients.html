@@ -21,14 +21,15 @@
     <![endif]-->
     <!-- Included JS -->
     <script src="js/modernizr.js"></script>
-    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="js/jquery.flexipage.js"></script>
-    <script src="js/carte.js"></script>
-   
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+
+    <!-- <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> -->
+    <script src="js/jquery.flexipage.js"></script> 
     <script src="js/jqvmap/jquery.vmap.js"></script>
     <script src="js/jqvmap/jquery-jvectormap-fr-merc-en.js"></script>
     <script src="js/jqvmap/jquery.vmap.colorsFrance.js"></script>
-    
+    <script src="js/carte.js"></script>
+
   </head>
   <body>
     <!-- header -->
@@ -66,59 +67,68 @@
     <div id="content">
       <header>
         <h3>Références Clients</h3>
-        <p>Vous trouverez ici toutes nos références clients en France. Cliquez sur une région pour afficher les références.</p>
-      </header>
-      <section>
-        <div id="vmap" class="map_index" style="width: 700; height: 610px"></div>
-      <article id="refClient">
-        <div class="gauche">
-          <h3></h3>
-          <p class="dept"></p> 
-        </div>
-        <div class="droite">
-          <select id="regions" name="regions">
-            <option value=""> Choisissez une région </option>
-          </select>
-          <select id="departements" name="departements">
-            <option value=""> Choisissez un département </option>
-          </select>
-        </div>
-        <br class="clear">
-        <div id="listClients"></div>
-      </article>
-      <br class="clear">
-    </section>              
-  </div>
-  <!-- footer -->
-  <div class="footer-bg">
-    <footer>
-      <section id="service">
-        <ul>
-          <li><a href="qui-sommes-nous.html">Qui sommes nous ?</a></li>
-          <li><a href="references-clients.html">Références clients</a></li>
-          <li><a href="partenaires.html">Partenaires</a></li>
-          <li><a href="telechargements.html">Téléchargements logiciels</a></li>
-        </ul>
-      </section>
-      <section id="information">
-        <ul>
-          <li><a href="documentation.html">Documentation</a></li>
-          <li><a href="contactez-nous.html">Contactez nous</a></li>
-          <li><a href="mentions-legales.html">Mentions légales</a></li>
-        </ul>
-      </section>
-      <section id="description">
-        <p>Cda informatique est une société spécialisée dans les logiciels d’assurances et de gestion client. Profitez de l’expérience de leurs leaders et de leurs expertises dans ce domaine.</p>
-      </section>
-      <section id="raison-social"> 
-        <p>SARL au capital de 39 637,00 €</p> 
-        <p>RCS LYON B 379 596 349</p> 
-        <p>TVA FR3837959634900033</p> 
-      </section>
-      <br class="clear">
-    </footer>
-  </div>
+        <p>Vous trouverez ici toutes nos références clients en France. Cliquez sur un département pour afficher les références.</p><a href="#?w=800"  rel="popup_name" class="poplight">Découvrez les témoignages de nos clients.</a>
+        <div id="popup_name" class="popup_block">
+          <h2>Témoignages</h2>
+          <h3>Cabinet Chatenet (Parthenay)</h3>
+          <p>"Il est indispensable aujourd'hui d'exploiter au mieux le portefeuille clients existant et de mettre en place des analyses de portefeuille. Nos besoins évoluent constamment et nous avons fréquemment de nouvelles demandes. Nous avons trouvé en e_Assur un logiciel très fortement orienté vers l'analyse commerciale, et en CDA Informatique un partenaire très réactif qui met en place en un temps record les procédures dont nous avons besoin."</p>
+          <h3>Gepca Partenaires(Lyon)</h3>
+          <p>"Notre objectif était de disposer d'outils fiables de gestion du portefeuille, et de réaliser des gains de productivité significatifs. Avec e_Assur, nous avons trouvé un logiciel intégré qui , tout en assurant la sécurité et la rapidité des relations avec les tiers (compagnies et clients), nous permet d'analyser très finement les données  économiques du portefeuille, en particulier la rentabilité de chaque client. De cette manière, nous avons pu entreprendre des actions ciblées afin d'améliorer la rentabilité globale. Par ailleurs, ce logiciel qui existe depuis 20 ans a constamment évolué pour adopter les dernières technologies sans que nous ayons à en changer."</p>
+          <h3>Cabinet AXILE (Toulouse)</h3>
+          <p>"Il ne suffit pas aujourd'ui d'assurer le suivi administratif et comptable du contrat. Nous devons disposer d'un outil de gestion de la relation client très performant. Nous avons trouvé en e_Assur un outil qui nous permet d'avoir une vision historique complète du dossier client( tâches, courriers envoyés reçus, appels téléphoniques, e_mail, historique contrat etc..... Cela nous permet d'assurer une gestion de la clientèle très personnalisée."</p>
+          </div>
+        </header>
+        <section>
+          <div id="vmap" class="map_index" style="width: 700; height: 610px"></div>
+          <article id="refClient">
+            <div class="gauche">
+              <h3></h3>
+              <p class="dept"></p> 
+            </div>
+            <div class="droite">
+              <select id="regions" name="regions">
+                <option value=""> Choisissez une région </option>
+              </select>
+              <select id="departements" name="departements">
+                <option value=""> Choisissez un département </option>
+              </select>
+            </div>
+            <br class="clear">
+            <div id="listClients"></div>
+          </article>
+          <br class="clear">
+        </section>              
+      </div>
+      <!-- footer -->
+      <div class="footer-bg">
+        <footer>
+          <section id="service">
+            <ul>
+              <li><a href="qui-sommes-nous.html">Qui sommes nous ?</a></li>
+              <li><a href="references-clients.html">Références clients</a></li>
+              <li><a href="partenaires.html">Partenaires</a></li>
+              <li><a href="telechargements.html">Téléchargements logiciels</a></li>
+            </ul>
+          </section>
+          <section id="information">
+            <ul>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="contactez-nous.html">Contactez nous</a></li>
+              <li><a href="mentions-legales.html">Mentions légales</a></li>
+            </ul>
+          </section>
+          <section id="description">
+            <p>Cda informatique est une société spécialisée dans les logiciels d’assurances et de gestion client. Profitez de l’expérience de leurs leaders et de leurs expertises dans ce domaine.</p>
+          </section>
+          <section id="raison-social"> 
+            <p>SARL au capital de 39 637,00 €</p> 
+            <p>RCS LYON B 379 596 349</p> 
+            <p>TVA FR3837959634900033</p> 
+          </section>
+          <br class="clear">
+        </footer>
+      </div>
 
-  
-</body>
-</html>
+
+    </body>
+    </html>

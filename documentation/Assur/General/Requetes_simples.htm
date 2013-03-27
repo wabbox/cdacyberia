@@ -1,0 +1,114 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="fr">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Requêtes simples</title>
+<style>
+<!--
+ p.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	margin-left:0cm; margin-right:0cm; margin-top:0cm}
+-->
+</style>
+</head>
+
+<body>
+
+<p class="MsoNormal" align="center" style="text-align: center"><font size="5">
+Requêtes simples</font></p>
+<p class="MsoNormal" align="center" style="text-align: center"><b>&nbsp;</b></p>
+<p class="MsoNormal"><b>1) <u>Rechercher les clients ayant un numéro de 
+téléphone&nbsp;:</u></b></p>
+<p class="MsoNormal"><b>&nbsp;</b></p>
+<p class="MsoNormal">Table&nbsp;: Clients</p>
+<p class="MsoNormal">Champs concernés&nbsp;: adresse1_Telephone1, 
+adresse1_telephone2, adresse1_telephone3</p>
+<p class="MsoNormal">Il faut rechercher les clients qui ont un telephone1, <u>ou</u> 
+un telephone2, <u>ou</u> un telephone3</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">
+<img border="0" src="../Images/Requetes_simples_1.gif" width="500" height="357"></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">On veut imprimer la liste des clients triée dans l’ordre 
+alphabétique, et les trois numéros de téléphone</p>
+<p class="MsoNormal">On veut aussi avoir le nombre de ces clients </p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">
+<img border="0" src="../Images/Requetes_simples_2.gif" width="500" height="332"></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">On ne veut pas avoir la liste des clients, mais seulement 
+leur nombre&nbsp;( on ne veut pas avoir le détail): sélectionner la ligne détail </p>
+<p class="MsoNormal">et cliquer sur le bouton cacher (8<sup>ème</sup> à partir 
+de la gauche)</p>
+<p class="MsoNormal">
+<img border="0" src="../Images/Requetes_simples_3.gif" width="500" height="332"></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><b>2) Rechercher les clients n’ayant pas de numéro de 
+téléphone&nbsp;:</b></p>
+<p class="MsoNormal"><b>&nbsp;</b></p>
+<p class="MsoNormal">Table&nbsp;: Clients</p>
+<p class="MsoNormal">Champs concernés&nbsp;: adresse1_Telephone1, 
+adresse1_telephone2, adresse1_telephone3</p>
+<p class="MsoNormal">Il faut rechercher les clients qui ont <u>ni</u> 
+telephone1, <u>ni</u> un telephone2, <u>ni</u> un telephone3</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">
+<img border="0" src="../Images/Requetes_simples_4.gif" width="500" height="357"></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">Les états seront les mêmes que précédemment.</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><b>3) Imprimer la liste des clients avec leur RIB</b></p>
+<p class="MsoNormal">Tables concernées : Clients et RIB</p>
+<p class="MsoNormal">a) Faire une requête sur la table clients (pour avoir la 
+liste de tous les clients, demander les clients dont le numero est different de 
+0</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">b) puis construire l'état</p>
+<p class="MsoNormal">cet état comporte des colonnes concernant deux tables : la 
+table Clients et la table RIB</p>
+<p class="MsoNormal">Vous créez vos colonnes. Pour que le logiciel puisse faire 
+le lien entre les deux tables, vous créer une colonne supplémentaire dans 
+laquelle il y aura une formule</p>
+<p class="MsoNormal">Allez dans le menu Colonnes, et faites Ajouter. L'éditeur 
+de formule vous invite à saisir la formule.</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><img border="0" src="Requet3.jpg" width="745" height="443"></p>
+<p class="MsoNormal"><img border="0" src="Requet4.jpg"></p>
+<p class="MsoNormal">&nbsp;</p>
+
+<p class="MsoNormal"><b>4) Recherche des véhicules non sortis d'une flotte</b></p>
+<p class="MsoNormal">Il faut envisager deux cas</p>
+<p class="MsoNormal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) Si cette 
+flotte est gérée en branche Auto (code extension 4) la date de sortie figure 
+dans le véhicule</p>
+<p class="MsoNormal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b) Si cette 
+flotte est gérée en branche Flotte (code extension 27 pour les flottes 
+multicompagnies) , la date de sortie se trouve dans la table Appartient_A_Flotte</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><b>a) Cas d'une flotte en branche Auto</b></p>
+<p class="MsoNormal">On fait la requête sur la table Vehicules</p>
+<p class="MsoNormal">Dans Liste des champs, sélectionner : Toutes les tables</p>
+<p class="MsoNormal"><img border="0" src="Requet1.jpg"></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><img border="0" src="Requet2.jpg"></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><b>a) Cas d'une flotte en branche Flotte auto</b></p>
+<p class="MsoNormal">On fait la requête sur la table Vehicules</p>
+<p class="MsoNormal">Dans Liste des champs, sélectionner : Toutes les tables</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><img border="0" src="Requet5.jpg"></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><img border="0" src="Requet6.jpg"></p>
+
+</body>
+
+</html>

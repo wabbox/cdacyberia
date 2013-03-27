@@ -1,0 +1,130 @@
+<HTML>
+<!--This file created 16:54  27/05/02 by Claris Home Page version 3.0-->
+<!--This file created 17:00  27/05/02 by Claris Home Page version 3.0-->
+<HEAD>
+   <TITLE>variablelistev7</TITLE>
+   <META NAME=GENERATOR CONTENT="Microsoft FrontPage 6.0">
+   <X-CLARIS-WINDOW TOP=25 BOTTOM=597 LEFT=4 RIGHT=728>
+   <X-CLARIS-TAGVIEW MODE=minimal>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<P><TABLE BORDER=0 WIDTH="100%">
+   <TR>
+      <TH ALIGN=center WIDTH=640>
+         <font size="+2" color="#0000FF">EXPRESSIONS</font><p><font size="+2" color="#0000FF"><b>&nbsp;PARAMETRAGE DES COURRIERS </b></font>
+      </TH>
+   </TR>
+</TABLE>
+ <TABLE BORDER=0 WIDTH="100%">
+   <TR>
+      <TD HEIGHT=75>
+         <P><A HREF="../../SommaireDoc.htm">Documentation Generale
+         produits</A></P>
+         
+         <P><A HREF="../SommaireAssur.htm">Sommaire Documentation
+         e_Assur</A></P>
+         
+         <P><a href="SommaireCourriers.htm">Sommaire courriers</a></P>
+      </TD>
+   </TR>
+</TABLE>
+ <TABLE BORDER=0 WIDTH="100%">
+   <TR>
+      <TD WIDTH=430>
+         Souvent, les informations que vous avez besoin d'imprimer dans un 
+			courrier ne peuvent etre obtenues par insertion d'un champ( soit 
+			parce que l'information n'est pas stockée dans la base, soit 
+			parceque e_assur a besoin de calculer cette information)<p>Dans ce 
+			cas, vous devez insérer une expression, et non un champ.</p>
+			<p>Pour cela, il faut dans Menu Insertion&nbsp;&nbsp; Expression
+         4D&nbsp;&nbsp; Cliquer sur l'onglet Expression , cliquer sur Modifier, sur le nouvel ecran 
+			saisir dans le rectangle blanc le nom de la variable ou de 
+			l'expression et cliquer sur Validation</TD>
+      <TD WIDTH="50%" height="100%">
+         <img border="0" src="../Images/VariableListeV7-1.gif" width="500" height="400"></TD>
+   </TR>
+   <TR>
+      <TD WIDTH=430 valign="top">
+         &nbsp;<b><font size="4"> 1 - Informations se rattachant au client</font></b><p>
+			<b>L'adresse du client</b> peut etre paramétrée à l'aide des champs 
+			de la table clients. Mais dans ce cas, le logiciel ne peut pas tenir 
+			compte d'une éventuelle seconde adresse, ou d'une adresse de 
+			quérabilité.</p>
+			<p>Il vaut donc mieux paramétrer une variable :</p>
+			<p>Vous pouvez paramétrer l'adresse en un seul bloc :</p>
+			<p><b>v_adr_cli</b></p>
+			<p>ou vous pouvez paramétrer chaque ligne séparément :</p>
+			<p><b>v_adr_cli_1, v_adr_cli_2, v_adr_cli_3, v_adr_cli_4, 
+			v_adr_cli_5,v_adr_cli_6, v_adr_cli_7</b></p>
+			<p>Les dates d'exercice<b> </b>de l'entreprise :</p>
+			<p><b>courrier_v_datedebut_exercice,courrier_ v_datefin_exercice, 
+			courrier_v_periodeexercice</b></p>
+			<p>La liste de ses contrats<b> :</b></p>
+			<p><b>courrier_v_Listecontrats</b></p>
+			<p>La liste de ses enfants :</p>
+			<p><b>courrier_v_Liste_Enfants, courrier_v_Enfantsscolarisés</b></p>
+			<p>Le nombre d'enfants :</p>
+			<p><b>courrier_v_Nbenfants, courrier_v_nbenfants_ACharge</b></p>
+			<p>&nbsp;</p>
+			<p><b><font size="4">2 - Informations se rattachant au contrat</font></b></p>
+			<p>Les quittances dues :</p>
+			<p><b>courrier_v_quittancesdues</b></p>
+			<p>Le total du :</p>
+			<p><b>courrier_v_quittances_total</b></p>
+			<p>La liste des ayant droit :</p>
+			<p><b>courrier_v_Listeayantdroit, courrier_v_listeayantdroitSante 
+			courrier_v_ListeayantdroitSE </b>(sante enfants<b>), 
+			courrier_v_listeayantdroitP (</b>prevoyance<b>), 
+			courrier_v_listeayantdroitAss (</b>assistance<b>)</b></TD>
+      <TD WIDTH="50%" valign="top" height="100%">
+         <img border="0" src="../Images/VariableListeV7-2.gif" width="500" height="400"></TD>
+   </TR>
+   <TR>
+      <TD WIDTH=1452 colspan="2">
+         &nbsp;<p>La liste des garanties :</p>
+			<p><b>courrier_v_listegar, courrier_v_listegarsous (souscrites), 
+			courrier_v_listegarliste</b></p>
+			<p>La liste des enfants de l'adhérent :</p>
+			<p><b>courrier_v_Listeenfadherent</b></p>
+         <p>&nbsp;</TD>
+   </TR>
+   <TR>
+      <TD WIDTH=1452 colspan="2">
+         <p>Coordonnées de l'apporteur<p><b>AppCode,
+         AppTitre,
+         Appnom,
+         Appprenom,
+         AppAdresse1,
+         AppAdresse2,
+         AppCodePost,
+         AppVille,
+         Apppays,
+         Apptel,&nbsp;
+         Appfax
+      </b>
+			<p>Coordonnées du gestionnaire<p><b>Gestcode, gesttitre,&nbsp;
+         Gestnom,
+         Gestprenom,
+         GestAdresse1,
+         GestAdresse2,
+         Gestcodepost,
+         Gestville,
+         Gestpays,
+         Gesttel,
+         Gestfax
+      </b>
+			<p><b><font size="4">3 - La variable d'adresse générique</font></b><p>
+			Vous pouvez etre amené à envoyer un courrier à une adresse autre que 
+			celle du client, par exemple à partir d'un sinistre vous envoyez un 
+			courrier à un interlocuteur dans une compagnie, ou chez un expert , 
+			.....<p>Dans ce cas, il vaut mieux paramétrer une adresse non 
+			spécialisée, valide quel que soit le destinataire :<p><b>
+			v_adr_destinataire</b><p>&nbsp;<p><font size="4"><b>4 - L'impression 
+			des avis d'échéance</b></font><p>Pour paramétrer vos avis 
+			d'échéance, vous pouvez paramétrer des champs de la table 
+			Quittances, ou <a href="Variables.htm">utiliser les variables 
+			suivantes :</a></TD>
+   </TR>
+</TABLE>
+</BODY>
+</HTML>

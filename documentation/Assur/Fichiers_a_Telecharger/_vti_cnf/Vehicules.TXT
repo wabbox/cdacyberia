@@ -1,0 +1,7 @@
+vti_encoding:SR|utf8-nl
+vti_timelastmodified:TR|16 Aug 2005 22:00:00 -0000
+vti_extenderversion:SR|6.0.2.5516
+vti_cacheddtm:TX|19 Apr 2005 17:47:00 -0000
+vti_filesize:IR|4976919
+vti_backlinkinfo:VX|Documentation/Assur/Maj/Mise_a_jour264.htm Documentation/Assur/Fichiers_a_Telecharger/FichiersDivers.htm Documentation/Assur/General/enumeres.htm
+vti_modifiedby:SR|DELLDIM2350\\Administrateur

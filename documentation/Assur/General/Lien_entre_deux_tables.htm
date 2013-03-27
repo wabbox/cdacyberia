@@ -1,0 +1,78 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="fr">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Faire le lien entre deux tables</title>
+<style>
+<!--
+ p.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	margin-left:0cm; margin-right:0cm; margin-top:0cm}
+-->
+</style>
+</head>
+
+<body>
+
+<p class="MsoNormal" align="center"><b><font size="5">Faire le lien entre deux 
+tables par l’intermédiaire d’une troisième</font></b></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><b>Requête : <u>Rechercher les contacts d'un client</u></b></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">Un client peut avoir plusieurs contacts, mais un contact 
+peut être relié à plusieurs clients.</p>
+<p class="MsoNormal">On ne peut donc pas trouver un contact directement à partir 
+du client, et on ne peut pas trouver un client directement à partir d'un 
+contact.</p>
+<p class="MsoNormal">On doit passer par l'intermédiaire d'une troisième table, 
+la table Contact_de.</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><b>Clients&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>
+Contact_de&nbsp;&nbsp;&nbsp;&nbsp; </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Contact</b></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">Numero client&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-family: Wingdings">
+ß</span>--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; contact_de_code&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact_code&nbsp;
+<span style="font-family: Wingdings">à</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; code_contact</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">&nbsp;1) <u><b>On se place sur la table Contact_de, et on 
+sélectionne toutes les occurrences correspondant au client cherché :</b></u></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">
+<img border="0" src="../Images/Lien_entre_deux_tables_1.gif" width="500" height="356"></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><u><b>2) On a trouvé un certain nombre d'occurrences, et on 
+peut maintenant construire l'état, en demandant à l'éditeur d'états</b></u></p>
+<p class="MsoNormal"><u><b>de rechercher, pour chaque occurrence, la personne 
+correspondante :</b></u></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><u><b>&nbsp;</b></u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+a) Créer une colonne avec une formule de recherche : Menu Colonnes, option 
+Ajouter</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">
+<img border="0" src="../Images/Lien_entre_deux_tables_2.gif" width="500" height="344"></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">&nbsp;Sélectionner la colonne C1
+<span style="font-family: Wingdings">à</span> Menu colonnes -&gt; Cacher</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">Ensuite, construire l’état en utilisant les informations de 
+la table Contacts</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">
+<img border="0" src="../Images/Lien_entre_deux_tables_3.gif" width="500" height="360"></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">On obtient la liste des contacts du client</p>
+<p class="MsoNormal">&nbsp;</p>
+
+</body>
+
+</html>

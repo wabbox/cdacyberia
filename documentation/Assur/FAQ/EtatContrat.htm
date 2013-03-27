@@ -1,0 +1,162 @@
+<HTML>
+<!--This file created 19:59  18/08/01 by Claris Home Page version 3.0This file created 20:01  18/08/01 by Claris Home Page version 3.0This file created 18:13  25/09/01 by Claris Home Page version 3.0This file created 19:36  07/12/01 by Claris Home Page version 3.0This file created 18:20  08/12/01 by Claris Home Page version 3.0This file created 11:26  07/01/02 by Claris Home Page version 3.0This file created 15:47  12/02/02 by Claris Home Page version 3.0-->
+<!--This file created 13:25  07/03/02 by Claris Home Page version 3.0-->
+<HEAD>
+   <TITLE>modele</TITLE>
+   <META NAME=GENERATOR CONTENT="Claris Home Page 3.0">
+   <X-CLARIS-WINDOW TOP=25 BOTTOM=597 LEFT=4 RIGHT=1008>
+   <X-CLARIS-TAGVIEW MODE=minimal>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<P><TABLE BORDER=1 WIDTH=640>
+   <TR>
+      <TD ALIGN=center WIDTH=640>
+         <P><FONT SIZE="+2"><B>Etats sur table
+         Contrats</B></FONT></P>
+      </TD>
+   </TR>
+</TABLE>
+ <TABLE BORDER=1 WIDTH=640>
+   <TR>
+      <TD HEIGHT=75>
+         <P><A HREF="../../SommaireDoc.htm">Documentation Generale
+         produits</A></P>
+         
+         <P><A HREF="../SommaireAssur.htm">Sommaire Documentation
+         e_Assur</A></P>
+         
+         <P><A HREF="SommaireFAQAssur.htm">Sommaire FAQ
+         e_Assur</A></P>
+      </TD>
+   </TR>
+</TABLE>
+ <TABLE BORDER=1 WIDTH=640>
+   <TR>
+      <TD ALIGN=center>
+         <P ALIGN=left>Quand on fait un &eacute;tat sur une table,
+         seules les informations stock&eacute;es dans cette table
+         sont disponibles.</P>
+         
+         <P ALIGN=left>Pour r&eacute;cup&eacute;rer des informations
+         stock&eacute;es dans une autre table, il faut cr&eacute;er
+         une colonne suppl&eacute;mentaire, et y adjoindre une ligne
+         de programmation pour aller chercher l'enregistrement
+         correspondant de l'autre table.</P>
+         
+         <P ALIGN=left>&nbsp;</P>
+         
+         <P ALIGN=left>Exemple: si on veut editer un &eacute;tat sur
+         contrats comportant les colonnes :</P>
+         
+         <P ALIGN=left><B>&#91;Contrats&#93;Numero_client          
+         &#91;clients&#93;nom         
+         &#91;contrats&#93;Numerocontrat</B></P>
+         
+         <P ALIGN=left>On dispose dans la table Contrats du numero de
+         client, et du numero de contrat, mais pas du nom qui se
+         trouve dans la table Clients.</P>
+         
+         <P ALIGN=left>&nbsp;</P>
+         
+         <P ALIGN=left>Il faut donc :</P>
+         
+         <P ALIGN=left>1- Creer vos trois colonnes </P>
+         
+         <P ALIGN=left>1-Rajouter une colonne : Menu Edition, Ajouter
+         colonne</P>
+         
+         <P ALIGN=left>2-Dire au logiciel d'aller chercher, pour
+         chaque contrat, le nom du client correspondant.</P>
+         
+         <P></P>
+      </TD>
+   </TR>
+</TABLE>
+<TABLE BORDER=1 WIDTH=640>
+   <TR>
+      <TD VALIGN=top>
+         <P><B>1) Cr&eacute;ation des trois colonnes de
+         l'&eacute;tat</B></P>
+         
+         <P>Double-cliquez sur NUMERO_Client</P>
+         
+         <P>La colonne correspondante de l'etat est
+         cr&eacute;&eacute;e</P>
+         
+         <P>Cliquer sur la croix &agrave; gauche de NUMERO_Client</P>
+         
+         <P>Vous obtenez la liste des champs de la table Clients :
+         double-cliquez sur Nom</P>
+         
+         <P>La colonne correspondante de l'etat est
+         cr&eacute;&eacute;e</P>
+         
+         <P>Cliquez sur le "- " &agrave; gauche de NUMERO_client</P>
+         
+         <P>Les champs de la table Clients sont masqu&eacute;s</P>
+         
+         <P>Double-cliquez sur NumeroContrat</P>
+         
+         <P>La colonne correspondante de l'etat est
+         cr&eacute;&eacute;e</P>
+         
+         <P>Si vous demandez l'impression de l'&eacute;tat
+         maintenant, la colonne du nom sera vide. Il faut maintenant
+         passer &agrave; la seconde &eacute;tape.</P>
+      </TD>
+      <TD>
+         <P><IMG SRC="../Images/EtatContrats.gif" WIDTH=411 HEIGHT=260 X-CLARIS-USEIMAGEWIDTH X-CLARIS-USEIMAGEHEIGHT ALIGN=bottom></P>
+      </TD>
+   </TR>
+   <TR>
+      <TD>
+         <P><B>2) Cr&eacute;ation d'une colonne de
+         programmation</B></P>
+         
+         <P>Edition ----&gt; Ajouter Colonne</P>
+         
+         <P>Tapez <FONT COLOR="#00CC00">Chercher(</FONT></P>
+         
+         <P><FONT COLOR="#000000">Cliquez sur la croix &agrave;
+         gauche de NUMERO_client. Les champs de la table Clients sont
+         affich&eacute;s.</FONT></P>
+         
+         <P><FONT COLOR="#000000">Double-cliquez sur Numero_client de
+         la table Clients</FONT></P>
+         
+         <P><FONT COLOR="#000000">Tapez
+         "</FONT><FONT COLOR="#00CC00">=</FONT><FONT COLOR="#000000">"</FONT></P>
+         
+         <P><FONT COLOR="#000000">Cliquez sur le "-" &agrave; gauche
+         de NUMERO_client de la table Contrats. La liste des champs
+         de la table Clients est masqu&eacute;e.</FONT></P>
+         
+         <P><FONT COLOR="#000000">Double-cliquez sur NUMERO_client de
+         la table Contrats.</FONT></P>
+         
+         <P><FONT COLOR="#000000">Fermez la parenth&egrave;se
+         </FONT><FONT COLOR="#00CC00">)</FONT></P>
+         
+         <P><FONT COLOR="#000000">Cliquez sur
+         </FONT><FONT COLOR="#FF0000">OK</FONT></P>
+         
+         <P><FONT COLOR="#000000">Pour que cette colonne de
+         programmation ne s'imprime pas, s&eacute;lectionnez la
+         nouvelle colonne, allez en <B>Edition -------&gt;
+         Cacher</B></FONT></P>
+         
+         <P><FONT COLOR="#000000">Vous pouvez demander
+         l'&eacute;dition de votre Etat.</FONT></P>
+         
+         <P>&nbsp;</P>
+         
+         <P></P>
+      </TD>
+      <TD>
+         <P><IMG SRC="../Images/EtatContrats2.gif" WIDTH=373 HEIGHT=232 X-CLARIS-USEIMAGEWIDTH X-CLARIS-USEIMAGEHEIGHT ALIGN=bottom></P>
+      </TD>
+   </TR>
+</TABLE>
+</P>
+</BODY>
+</HTML>

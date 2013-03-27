@@ -1,5 +1,4 @@
 $(document).ready(function(){ 
-	// console.log(str);
 	var $regionDefault = "69";
 	var $regions = $('#regions');
 	var $departements = $('#departements');
@@ -7,28 +6,20 @@ $(document).ready(function(){
 	map = new jvm.WorldMap({
 		container: $('#vmap'),
 		map: 'fr_merc_en',
-		hoverOpacity: 0.5,
-		hoverColor: false,
-    // colors: couleurs,
-    borderColor: "#000",
-    borderWidth: .8,
-    borderOpacity:.5,
     backgroundColor: 'transparent',
     regionsSelectableOne: true,
     regionStyle: {
       initial: {
-        // fill: '#20A917',
         "fill-opacity": 1,
-        stroke: 'none',
-        "stroke-width": 0,
+        stroke: '#FFFFFF',
+        "stroke-width": 0.1,
         "stroke-opacity": 1
       },
       hover: {
-        fill: '#45A429'
+        fill: '#5097CD'
       },
       selected: {
-        //bleu fill: '#3573B4'
-        fill: '#45A429'
+        fill: '#5097CD'
       },
       selectedHover: {
         "fill-opacity": 0.9
@@ -36,8 +27,11 @@ $(document).ready(function(){
     },
     series: {
       regions: [{
-                attribute: 'fill'
-            }]
+        attribute: 'fill'
+      }]
+    },
+    onRegionLabelShow: function(e, el, code){
+      el.html(el.html()+' ('+code+')');
     },
     onRegionClick: function(element, code, region)
     {
@@ -45,7 +39,6 @@ $(document).ready(function(){
       listeClients(code);
     },
     onRegionSelected: function(code){
-      //console.log(code);
       if (window.localStorage) {
         window.localStorage.setItem(
          'jvectormap-selected-regions',
@@ -54,7 +47,7 @@ $(document).ready(function(){
       }
     }
   });
-map.series.regions[0].setValues(couleurs);
+  map.series.regions[0].setValues(couleurs);
   if (window.localStorage) {
     map.setSelectedRegions( JSON.parse( window.localStorage.getItem('jvectormap-selected-regions') || '[]' ) );
   } 
@@ -187,4 +180,45 @@ $('html, body').animate({
     	var code = $(this).val(); // on récupère la valeur de la région
     	listeClients(code);
     });
+    //Lorsque vous cliquez sur un lien de la classe poplight et que le href commence par #
+    $('a.poplight[href^=#]').click(function() {
+  var popID = $(this).attr('rel'); //Trouver la pop-up correspondante
+  var popURL = $(this).attr('href'); //Retrouver la largeur dans le href
+
+  //récupération les variables depuis le lien
+  var query= popURL.split('?');
+  var dim= query[1].split('&');
+  var popWidth = dim[0].split('=')[1]; //La première valeur du lien
+
+  //Faire apparaitre la pop-up et ajouter le bouton de fermeture
+  $('#' + popID).fadeIn().css({
+    'width': Number(popWidth)
+  })
+  .prepend('<a href"#" class="close"><img src="images/picto/close.png" class="btn_close" tilte="Fermer" alt="Fermer" /></a>');
+
+  //Récupération du margin, qui permettra de centrer la fenêtre - on ajuste de 80px en conformité avec le CSS
+  var popMargTop = ($('#' + popID).height() + 80) / 2;
+  var popMargLeft = ($('#' + popID).width() + 80) / 2;
+
+  //On affecte le margin
+  $('#' + popID).css({
+    'margin-top' : -popMargTop,
+    'margin-left' : -popMargLeft
+  });
+
+  //Effet fade-in du fond opaque
+  $('body').append('<div id="fade"></div>'); //Ajout du fond opaque noir
+  //Apparition du fond - .css({'filter' : 'alpha(opacity=80)'}) pour corriger les bogues de IE
+  $('#fade').css({'filter' : 'alpha(opacity=90)'}).fadeIn();
+
+  return false;
+});
+
+//Fermeture de la pop-up et du fond
+$('a.close, #fade').live('click', function() { //Au clic sur le bouton ou sur le calque...
+  $('#fade , .popup_block').fadeOut(function() {
+    $('#fade, a.close').remove();  //...ils disparaissent ensemble
+  });
+  return false;
+});
 });		

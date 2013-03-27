@@ -1,0 +1,90 @@
+<html>
+<!--This file created 19:59  18/08/01 by Claris Home Page version 3.0This file created 20:01  18/08/01 by Claris Home Page version 3.0This file created 18:13  25/09/01 by Claris Home Page version 3.0This file created 19:36  07/12/01 by Claris Home Page version 3.0This file created 18:20  08/12/01 by Claris Home Page version 3.0This file created 11:17  07/01/02 by Claris Home Page version 3.0This file created 11:26  07/01/02 by Claris Home Page version 3.0This file created 09:41  20/02/02 by Claris Home Page version 3.0-->
+<!--This file created 09:46  24/04/02 by Claris Home Page version 3.0-->
+
+<head>
+<title>modele</title>
+<meta NAME="GENERATOR" CONTENT="Microsoft FrontPage 4.0">
+<X-CLARIS-WINDOW TOP="25" BOTTOM="597" LEFT="4" RIGHT="1008">
+<X-CLARIS-TAGVIEW MODE="minimal">
+</head>
+
+<body BGCOLOR="#FFFFFF">
+
+<table BORDER="1" WIDTH="640" height="57">
+  <tr>
+    <td ALIGN="center" WIDTH="640" height="51"><strong><font color="#FF80C0">GESTION DES
+    COURRIERS</font></strong><p align="left"><font color="#0000FF"><small><strong><small><small>OPTION
+    &nbsp; :</small> Paramètres&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    MENU&nbsp;&nbsp; : </small>Courriers
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <small>SOUS-OPTION&nbsp; : </small>Gestion des courriers</small></strong></small></font></td>
+  </tr>
+  <tr>
+    <td ALIGN="center" WIDTH="640" height="51"><p align="left"><a HREF="../../SommaireDoc.htm">Documentation
+    Generale produits</a></p>
+    <p align="left"><a HREF="../SommaireAssur.htm">Sommaire Documentation e_Assur</a></p>
+    <p align="left"><a HREF="SommaireCompta.htm">Sommaire Paramètres</a></td>
+  </tr>
+</table>
+
+<table BORDER="1" WIDTH="640">
+  <tr>
+    <td HEIGHT="75"><a HREF="../../SommaireDoc.htm"><strong>I - SIGNATURE AUTOMATIQUE D'UN
+    COLLABORATEUR</strong></a><p>Il est désormais possible de faire signer automatiquement un
+    courrier par un collaborateur.</p>
+    <p>Pour cela :</p>
+      <p><b>1 - En gestion des collaborateurs :</b> saisir vos collaborateurs<br>
+      dans la rubrique&nbsp; signature&nbsp; courriers :&nbsp; saisir la
+      signature<br>
+      cocher la rubrique :&nbsp; Accès à la base.</p>
+    <p><strong>2 - En gestion des énumérés, </strong>dans l'énuméré m_sign, mettre en
+    valeur la liste des collaborateurs qui peuvent signer un courrier.</p>
+    <p><strong>3 - Dans les courriers, </strong>paramétrer la zone qui doit recevoir le nom
+    du collaborateur de la manière suivante :</p>
+      <p>Insertion -&nbsp; Expression&nbsp; 4D -&nbsp; Cliquer sur l'onglet
+      Expression<br>
+      Cliquer modifier&nbsp; Saisir sur le nouvel écran&nbsp; v_sign&nbsp;
+      cliquer sur OK&nbsp; puis OK.<br>
+      La variable v_sign est affichée (pour la voir affichée&nbsp;&nbsp;
+      Edition - Afficher les références)</p>
+    <p><strong>4 - Lors de l'émission du courrier, </strong>choisir dans le menu déroulant,
+    rubrique signature, le collaborateur concerné.</p>
+    <p><a HREF="../../SommaireDoc.htm"><strong>II - DEFINITION D'UNE CIVILITE</strong></a></p>
+    <p>Pour définir la civilité dans un courrier, 3 procédures sont disponibles :</p>
+    <p><strong>aqui
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    aqui2
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    aqui3</strong></p>
+    <p><strong>La procédure aqui </strong>permet de mettre devant le titre du client<strong>
+    &quot;Cher&quot; </strong>ou<strong> &quot;Chère&quot;</strong></p>
+    <p>On paramétrera donc de la façon suivante : Menu base - option Insérer une commande
+    4D.</p>
+    <p>Une fenêtre &quot;Nom de la variable ou de la commande à insérer&quot; apparaît à
+    l'écran.</p>
+    <p>Saisir : aqui et cliquer sur OK. Vous obtenez &quot;aqui&quot;</p>
+    <p>Choisir dans le menu base l'option : insérer un champ. Sélectionner le fichier
+    clients. Cliquer sur la rubrique titres. Cliquer sur OK. Vous obtenez : (clients)TITRE</p>
+    <p><strong>La procédure aqui2</strong> permet d'inscrire en civilité :</p>
+    <p>&quot;Cher Client&quot; si le titre est Monsieur ou Maître</p>
+    <p>&quot;Chère Cliente&quot; si le titre est Madame ou Mademoiselle</p>
+    <p>&quot;Chers Clients&quot; dans tous les autres cas.</p>
+    <p>On paramètrera : Menu base - Option : Insérer une commande 4D.</p>
+    <p>Une fenêtre &quot;Nom de la variable ou de la commande à insérer&quot; apparaît à
+    l'écran.</p>
+    <p>Saisir : aqui2 et cliquer OK. Vous obtenez : &quot;aqui2&quot;</p>
+    <p><strong>La procédure aqui3 </strong>permet d'inscrire en civilité : </p>
+    <p>&quot;Cher Monsieur&quot; ou &quot;Cher Maître&quot; si le titre est Monsieur ou
+    Maître</p>
+    <p>&quot;Chère Madame&quot; ou &quot;Chère Mademoiselle si le titre est Madame ou
+    Mademoiselle</p>
+    <p>&quot;Messieurs&quot; dans tous les autres cas.</p>
+    <p>On paramètrera : Menu base - option : insérer une commande 4D.</p>
+    <p>Une fenêtre &quot;Nom de la variable ou de la commande à insérer&quot; apparaît à
+    l'écran.</p>
+    <p>Saisir : aqui3 et cliquer sur OK. Vous obtenez &quot;aqui3&quot;</td>
+  </tr>
+</table>
+</body>
+</html>

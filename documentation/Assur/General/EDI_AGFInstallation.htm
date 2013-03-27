@@ -1,0 +1,226 @@
+<HTML>
+<!--This file created 19:59  18/08/01 by Claris Home Page version 3.0This file created 20:01  18/08/01 by Claris Home Page version 3.0This file created 20:04  27/08/01 by Claris Home Page version 3.0This file created 11:10  08/12/01 by Claris Home Page version 3.0This file created 17:29  08/12/01 by Claris Home Page version 3.0This file created 12:12  22/01/02 by Claris Home Page version 3.0This file created 20:50  22/01/02 by Claris Home Page version 3.0This file created 12:10  23/01/02 by Claris Home Page version 3.0This file created 17:27  23/01/02 by Claris Home Page version 3.0This file created 21:27  30/01/02 by Claris Home Page version 3.0-->
+<!--This file created 16:09  09/04/02 by Claris Home Page version 3.0-->
+<HEAD>
+   <TITLE>EDI_AGF Installation</TITLE>
+   <META NAME=GENERATOR CONTENT="Microsoft FrontPage 6.0">
+   <X-CLARIS-WINDOW TOP=52 BOTTOM=603 LEFT=8 RIGHT=751>
+   <X-CLARIS-TAGVIEW MODE=minimal>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<P><TABLE BORDER=1 WIDTH=710>
+   <TR>
+      <TH ALIGN=center WIDTH=640>
+         <P><FONT SIZE="+1"><B>INSTALLATION DES EDI AGF</B></FONT></P>
+      </TH>
+   </TR>
+</TABLE>
+ <TABLE BORDER=1 WIDTH=710>
+   <TR>
+      <TD HEIGHT=75 width="800">
+         <P><A HREF="../../SommaireDoc.htm">Documentation Generale
+         produits</A></P>
+         
+         <P><A HREF="../SommaireAssur.htm">Sommaire Documentation
+         e_Assur</A></P>
+         
+         <P><A HREF="SommaireCompta.htm">Sommaire
+         Param&egrave;tres</A></P>
+      </TD>
+   </TR>
+</TABLE>
+ <TABLE BORDER=1 WIDTH=710>
+   <TR>
+      <TD WIDTH=640>
+         <P>Pour installer l'EDI AGF, vous devez procéder en trois étapes :</P>
+         <P>1) Récupérer le fichier d'installation nommé EDI_AGF.TXT et
+         procéder à son installation</P>
+         <P>2) Procéder au paramétrage des branches et des garanties</P>
+         <P>3) Procéder au contrôle du paramétrage des programmes EDI</P>
+      </TD>
+   </TR>
+</TABLE>
+ <TABLE BORDER=1 WIDTH=710>
+   <TR>
+      <TD>
+         <P><b>1°)Première étape : Récupérer le fichier d'installation&nbsp;</b></P>
+			<P>Vérifiez que vous avez bien sur votre disque un répertoire EDI. 
+			Si ce n'est pas le cas, créez le.</P>
+			<P>Si, dans ce répertoire, vous n'avez pas de répertoire EDI_AGF, 
+			créez le.</P>
+			<P>Puis :</P>
+			<P>&nbsp;Allez en <b>Gestion -----&gt;Compagnies -------&gt; Gestion des
+         compagnies </b></P>
+         
+         <P>Double-cliquez sur la compagnie AGF</P>
+         
+         <P>Sur l'écran de la compagnie, cliquez sur le bouton<b> EDI</b></P>
+			<P>Sur le nouvel ecran, cliquez sur le bouton<b> Télécharger EDI</b></P>
+         
+         <P>&nbsp;</P>
+         
+         <P>&nbsp;</P>
+         
+      </TD>
+      <TD>
+         <img border="0" src="../Images/EDI_Installation.gif" width="400" height="300"></TD>
+   </TR>
+</TABLE>
+<table border="1" width="710">
+  <tr>
+    <td>La page contenant les liens vers les EDI téléchargeables s'affiche</td>
+    <td>
+	<img border="0" src="../Images/EDI_Installation2.gif" width="400" height="300"></td>
+  </tr>
+</table>
+<table border="1" width="710" id="table1">
+	<tr>
+		<td>Cliquez droit sur la ligne AGF Courtage, et sélectionnez l'option <b>
+		Enregistrer la cible sous....</b>Le dialogue d'enregistrement de fichier 
+		vous demande où enregistrer de fichier EDI_AGF.TXT<p>Localisez le 
+		répertoire EDI_AGF dans EDI, et cliquez sur <b>Enregistrer</b></p>
+		<p>Quittez votre Navigateur web.</p>
+		<p>Cliquez sur le bouton <b>Installer EDI</b></td>
+		<td>
+		<img border="0" src="../Images/EDI_AGF_Installation1.gif" width="400" height="300"></td>
+	</tr>
+</table>
+<table border="1" width="710" id="table2">
+	<tr>
+		<td>Le dialogue d'ouverture de fichier vous demande où se trouve le 
+		fichier EDI_AGF.TXT à installer. Allez de sélectionner dans le 
+		répertoire EDI_AGF et cliquez sur <b>Ouvrir</b></td>
+		<td>
+		<img border="0" src="../Images/EDI_AGF_Installation2.gif" width="300" height="225"></td>
+	</tr>
+</table>
+<table border="1" width="710" id="table4">
+	<tr>
+		<td>Le logiciel vous informe lorsque l'installation est terminée</td>
+		<td>
+		<img border="0" src="../Images/EDI_Installation3.gif" width="400" height="300"></td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+</table>
+<table border="1" width="710">
+  <tr>
+    <td><b>2) Deuxième étape : Contrôler, corriger, compléter les
+      paramétrages branches et garanties</b>
+      <p>Pour que l'EDI puisse fonctionner correctement, il est nécessaire de
+      donner à e_Assur un certain nombre d'informations.&nbsp;<p><b>Paramétrage des branches et sous branches :</b>
+      </p>
+      <p>Les contrats créés doivent être rattachés à vos branches et sous
+      branches</p>
+      <p>Les messages AGF ne connaissent que deux branches : Auto (avec comme
+      sous branches 1CAT, 2CAT, 3CAT, VSPE) et l'IRD (sans sous branches).</p>
+      <p>Un partie du paramétrage a été faite, mais vous devez la compléter
+      pour l'IRD.</p>
+      <p>Pour cela, allez en <b>Gestion ----&gt;Compagnies-----&gt;Gestion des
+      compagnies</b></p>
+      <p>Double-cliquez sur la compagnie AGF.
+      Sur l'écran de la compagnie, cliquez sur <b>EDI</b></td>
+  </tr>
+</table>
+<table border="1" width="710">
+  <tr>
+    <td width="516">Vous obtenez le tableau qui établit la correspondance entre
+      les branches AGF et les vôtres 
+      <p>La branche 01 est l'auto, la branche 02 est l'IRD.</p>
+      <p>Si, sur une des lignes, vous voyez un (?), c'est que e_assur n'a pas su
+      trouver la branche ou la sous branche. A vous de corriger.</p>
+	</td>
+    <td width="108">
+	<img border="0" src="../Images/EDI_AGF_Installation3.gif" width="400" height="300"></td>
+  </tr>
+</table>
+<table border="1" width="710">
+  <tr>
+    <td>Pour modifier une ligne existante, double-cliquez sur la ligne
+      correspondante, vous obtenez l'écran de saisie, et vous modifiez la
+      branche et la sous branche.
+      <p>&nbsp;</td>
+    <td>
+	<img border="0" src="../Images/EDI_Installation4.gif" width="400" height="300"></td>
+  </tr>
+</table>
+<table border="1" width="710">
+  <tr>
+    <td><b>Paramétrages des produits</b><p>Pour pouvoir affecter l'IRD à une de vos branches, on doit passer par
+      les produits.
+      <p>Par exemple, en IRD, le produit MXH Evolution correspond à la branche
+      M R habitation.<p>Vous devez de la même manière paramétrer les autres
+      produits : AGF Immeuble, AGF Pro, AGF Actif etc... 
+	<p>&nbsp;</p>
+      <p>Il faut établir la correspondance entre les garanties AGF et les vôtres.</p>
+      <p>Une garantie chez AGF est désignée par un code à trois caractères :
+      003, 06B etc...</p>
+      <p>La correspondance entre les les codes et les libellés se fait en :
+      Gestion --&gt; Compagnies --&gt; Gestion des produits.Vous devez disposer
+      d'un produit Auto, et de la liste des produits IRD. <font color="#FF0000">VOUS
+      DEVEZ AVOIR UN PRODUIT PARAMETRE PAR PRODUIT SOUSCRIT CHEZ AGF</font></p>
+      <p>&nbsp;</td>
+    <td><img border="0" src="../Images/EDI_AGF_Installation4.gif" width="351" height="212"></td>
+  </tr>
+</table>
+<table border="1" width="710">
+  <tr>
+    <td>Sélectionnez par exemple le produit MXH Evolution, et cliquez sur 
+	Modifier<p><font color="#000000">Dans le bas de l'ecran, vous avez la liste des
+      garanties AGF pour l'IRD, avec, à gauche le libellé de la garantie chez
+      AGF, et à droite le code qui se trouve dans le fichier EDI.Vous pouvez
+      garder ces libellés, ou vous pouvez les modifier pour qu'ils
+      correspondent à ceux qui ont été paramétrés pour cette branche en
+      gestion des branches</font></p>
+      <p><font color="#000000">Pour modifier le libellé d'une garantie,
+      double-cliquez sur sa ligne.</font></td>
+    <td>
+	<img border="0" src="../Images/EDI_AGF_Installation4.gif" width="400" height="300"></td>
+  </tr>
+</table>
+<table border="1" width="710">
+  <tr>
+    <td>Vous obtenez l'écran de saisie d'une garantie pour ce produit.
+      <p>Sélectionnez le libellé de la garantie et cliquez sur validation.</p>
+      <p>Le chiffre qui est à droite de garantie Cie correspond au code de la 
+		garantie chez AGF</p>
+      <p>&nbsp;</td>
+    <td>
+	<img border="0" src="../Images/EDI_AGF_Installation5.gif" width="400" height="300"></td>
+  </tr>
+</table>
+<table border="1" width="710">
+  <tr>
+    <td><b>3) Controle du parametrage du programme EDI</b>
+      <p>&nbsp;</p>
+      <ul>
+        <li>Controlez que touts les programmes nécessaires à l'EDI sont bien
+          installés. Pour cela, allez en <b>Parametres --&gt; Utilitaire --&gt; Importations de
+          fichiers</b></li>
+      </ul>
+      <p>Vérifiez que vous avez bien dans la zone de défilement de droite les
+      lignes :</p>
+      <ul>
+        <li>EDI AGF 1Cat</li>
+        <li>EDI AGF 2Cat</li>
+        <li>EDI AGF 3Cat</li>
+        <li>EDI AGF Contrats Auto</li>
+        <li>EDI AGF Contrats IRD</li>
+        <li>EDI AGF Entete</li>
+        <li>EDI AGF Entete Terme entreprise</li>
+        <li>EDI AGF Entete Terme particulier</li>
+        <li>EDI AGF IRD</li>
+        <li>EDI AGF quittance de prime</li>
+        <li>EDI AGF sinistres</li>
+        <li>EDI AGF Terme Total</li>
+        <li>EDI AGF VSPE</li>
+      </ul>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</td>
+  </tr>
+</table>
+</BODY>
+</HTML>
