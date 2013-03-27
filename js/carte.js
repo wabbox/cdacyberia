@@ -31,7 +31,25 @@ $(document).ready(function(){
       }]
     },
     onRegionLabelShow: function(e, el, code){
-      el.html(el.html()+' ('+code+')');
+      $.getJSON("js/clients.json", function(data) {
+        //selection du departement
+        dept = $.grep(data.departements, function(element, index){
+                return element.code == code; // retain appropriate elements
+              });
+        var nbclients;
+        //liste des Clients
+        $.each(dept, function(i, dept){
+          nbclients = dept.clients.length;
+        });
+        if (!nbclients){
+          labelText="aucun client"
+        } else if (nbclients == 1){
+          labelText="1 client";
+        } else {
+          labelText=nbclients+" clients";
+        };
+      el.html(el.html()+' ('+code+') '+labelText);        
+      });
     },
     onRegionClick: function(element, code, region)
     {
@@ -47,41 +65,41 @@ $(document).ready(function(){
       }
     }
   });
-  map.series.regions[0].setValues(couleurs);
-  if (window.localStorage) {
-    map.setSelectedRegions( JSON.parse( window.localStorage.getItem('jvectormap-selected-regions') || '[]' ) );
-  } 
-  if (map.getSelectedRegions()!='') {
-    listeSelect(map.getSelectedRegions());
-    listeClients(map.getSelectedRegions());
-  } else{
-    listeSelect($regionDefault);
-    listeClients($regionDefault);
-  };
+map.series.regions[0].setValues(couleurs);
+if (window.localStorage) {
+  map.setSelectedRegions( JSON.parse( window.localStorage.getItem('jvectormap-selected-regions') || '[]' ) );
+} 
+if (map.getSelectedRegions()!='') {
+  listeSelect(map.getSelectedRegions());
+  listeClients(map.getSelectedRegions());
+} else{
+  listeSelect($regionDefault);
+  listeClients($regionDefault);
+};
 
 
-  function listeSelect(code) {
-    var idRegion;
-    var idDept;
-    $regions.empty();
-    $departements.empty();
-    $.getJSON('js/region_dept.json', function(data) {
-      $.each(data.regions, function(key, val)
+function listeSelect(code) {
+  var idRegion;
+  var idDept;
+  $regions.empty();
+  $departements.empty();
+  $.getJSON('js/region_dept.json', function(data) {
+    $.each(data.regions, function(key, val)
+    {
+      $regions.append('<option value="'+ val.id_region +'">'+ val.name_region +'</option>');
+      $.each(val, function(key2, val2)   
       {
-        $regions.append('<option value="'+ val.id_region +'">'+ val.name_region +'</option>');
-        $.each(val, function(key2, val2)   
-        {
-          for (var i in val2) {
-            if (val2[i].code_dep==code) {
-              $("#regions option[value='"+val.id_region+"']").attr("selected","selected");
-              idRegion = val.id_region;
-            };
+        for (var i in val2) {
+          if (val2[i].code_dep==code) {
+            $("#regions option[value='"+val.id_region+"']").attr("selected","selected");
+            idRegion = val.id_region;
           };
-        });
-        region = $.grep(data.regions, function(element, index){
-          return element.id_region == idRegion;
-        });
+        };
       });
+      region = $.grep(data.regions, function(element, index){
+        return element.id_region == idRegion;
+      });
+    });
         //liste des departements on met a jour le select
         $.each(region, function(i, region){
           for (var i = 0; i < region.departements.length; i++) {

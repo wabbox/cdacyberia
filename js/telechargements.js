@@ -48,9 +48,14 @@ $(document).ready(function(){
 	var dim= query[1].split('&');
 	var popWidth = dim[0].split('=')[1]; //La première valeur du lien
 
+	//Get the window height and width
+	var winH = $(window).height();
+
 	//Faire apparaitre la pop-up et ajouter le bouton de fermeture
 	$('#' + popID).fadeIn().css({
-		'width': Number(popWidth)
+		'width': Number(popWidth),
+		'height' : Number(winH-100),
+		'overflow' : 'auto'
 	})
 	.prepend('<a href"#" class="close"><img src="images/picto/close.png" class="btn_close" tilte="Fermer" alt="Fermer" /></a>');
 

@@ -3,21 +3,7 @@
 		"code": "59",
 		"region" : "Nord",
 		"clients":[
-		{
-			"nom"    : "Optimium Assurance",
-			"contact": "Mr Depinay",
-			"ville"  : "BORDEAUX"
-		},
-		{
-			"nom"    : "Optimium Assurance",
-			"contact": "Mr Depinay",
-			"ville"  : "BORDEAUX"
-		},
-		{
-			"nom"    : "Cabinet JOUFFRAU",
-			"contact": "Mr Jouffrau",
-			"ville"  : "LANTON"
-		}	
+		
 	]},
 	{
 		"code": "62",
@@ -48,6 +34,11 @@
 		"code": "76",
 		"region" : "Seine-Maritime",
 		"clients":[
+		{
+			"nom"    : "AMTI",
+			"contact": "Mr Vicomte",
+			"ville"  : "LE HAVRE"
+		}
 	]},
 	{
 		"code": "14",
@@ -63,6 +54,11 @@
 		"code": "61",
 		"region" : "Orne",
 		"clients":[
+		{
+			"nom"    : "VALORIASS",
+			"contact": "Mme Lefèvre",
+			"ville"  : "BELLEME"
+		}
 	]},
 	{
 		"code": "29",
@@ -78,26 +74,77 @@
 		"code": "56",
 		"region" : "Morbihan",
 		"clients":[
+		{
+			"nom"    : "Cabinet HEURTEBIS",
+			"contact": "Mr Heurtebis",
+			"ville"  : "PONTIVY"
+		}
+
 	]},
 	{
 		"code": "22",
 		"region" : "Côtes-d'Armor",
 		"clients":[
+		{
+			"nom"    : "Cabinet EON",
+			"contact": "Mr Eon",
+			"ville"  : "SAINT BRIEUC"
+		},
+		{
+			"nom"    : "Cabinet REGUER",
+			"contact": "Mr et Mme Reguer",
+			"ville"  : "DINAN"
+		}
 	]},
 	{
 		"code": "75",
 		"region" : "Paris",
 		"clients":[
+		{
+			"nom"    : "BURDIGALA INTL",
+			"contact": "Mr Péreira",
+			"ville"  : "PARIS"
+		},
+		{
+			"nom"    : "FINANCIERE MATIGNON",
+			"contact": "Mr Chauve",
+			"ville"  : "PARIS"
+		},
+		{
+			"nom"    : "LPP Conseils",
+			"contact": "Mr Pujau",
+			"ville"  : "PARIS"
+		},
+		{
+			"nom"    : "AMA",
+			"contact": "Mr Amalric",
+			"ville"  : "PARIS"
+		}
 	]},
 	{
 		"code": "77",
 		"region" : "Seine-et-Marne",
 		"clients":[
+		{
+			"nom"    : "SATEC-SEP",
+			"contact": "Mr Sallard",
+			"ville"  : "TORCY"
+		},
+		{
+			"nom"    : "Cabinet TO TO HA",
+			"contact": "Mr & Mme To",
+			"ville"  : "NOISIEL"
+		}
 	]},
 	{
 		"code": "78",
 		"region" : "Yvelines",
 		"clients":[
+		{
+			"nom"    : "A & M I",
+			"contact": "Mme Husson",
+			"ville"  : "RAMBOUILLET"
+		}
 	]},
 	{
 		"code": "91",
@@ -118,11 +165,31 @@
 		"code": "94",
 		"region" : "Val-de-Marne",
 		"clients":[
+		{
+			"nom"    : "Cabinet DE OLIVEIRA",
+			"contact": "Mr De Oliveira",
+			"ville"  : "VILLENEUVE SAINT-GEORGES"
+		},
+		{
+			"nom"    : "A. M. V",
+			"contact": "Mr Sarocchi",
+			"ville"  : "LA VARENNE SAINT-HILAIRE"
+		},
+		{
+			"nom"    : "ACGEP",
+			"contact": "Mr Nahmani",
+			"ville"  : "FRESNES"
+		}
 	]},
 	{
 		"code": "95",
 		"region" : "Val-d'Oise",
 		"clients":[
+		{
+			"nom"    : "APIC",
+			"contact": "Mr Saive",
+			"ville"  : "PONTOISE - LES ULIS"
+		}
 	]},
 	{
 		"code": "18",
@@ -143,6 +210,16 @@
 		"code": "37",
 		"region" : "Indre-et-Loire",
 		"clients":[
+		{
+			"nom"    : "C.O.R.E.F.I",
+			"contact": "Mr Hardoin",
+			"ville"  : "TOURS"
+		},
+		{
+			"nom"    : "AUDET Assurances",
+			"contact": "Mr Audet",
+			"ville"  : "MONTBAZON"
+		}
 	]},
 	{
 		"code": "41",
@@ -158,11 +235,36 @@
 		"code": "44",
 		"region" : "Loire-Atlantique",
 		"clients":[
+		{
+			"nom"    : "FGP Assurances",
+			"contact": "Mr Germond",
+			"ville"  : "NANTES"
+		},
+		{
+			"nom"    : "FLEUREAU & POULAIN",
+			"contact": "Mr Fleureau",
+			"ville"  : "NANTES"
+		},
+		{
+			"nom"    : "OFFICE NANTAIS COURTAGE",
+			"contact": "Mr Thuau - Mme Provost",
+			"ville"  : "NANTES"
+		},
+		{
+			"nom"    : "CAPFI",
+			"contact": "Mr Magras",
+			"ville"  : "SAUTRON"
+		}
 	]},
 	{
 		"code": "49",
 		"region" : "Maine-et-Loire",
 		"clients":[
+		{
+			"nom"    : "Cabinet POUPARD",
+			"contact": "Mr Poupard",
+			"ville"  : "ANGERS"
+		}
 	]},
 	{
 		"code": "53",
@@ -173,6 +275,11 @@
 		"code": "72",
 		"region" : "Sarthe",
 		"clients":[
+		{
+			"nom"    : "SARTHOIS D’ASSURANCES",
+			"contact": "Mr Deplagne",
+			"ville"  : "LE MANS"
+		}
 	]},
 	{
 		"code": "85",
@@ -223,6 +330,16 @@
 		"code": "54",
 		"region" : "Meurthe-et-Moselle",
 		"clients":[
+		{
+			"nom"    : "CAARD",
+			"contact": "Mme & Mr Lévy",
+			"ville"  : "NANCY"
+		},
+		{
+			"nom"    : "LORRAIN D’ASSURANCES",
+			"contact": "Mme Malglaive",
+			"ville"  : "BACCARAT"
+		}
 	]},
 	{
 		"code": "55",
@@ -258,11 +375,21 @@
 		"code": "39",
 		"region" : "Jura",
 		"clients":[
+		{
+			"nom"    : "CAP ASSURANCES",
+			"contact": "Mr Michel",
+			"ville"  : "LES ROUSSES"
+		}
 	]},
 	{
 		"code": "70",
 		"region" : "Haut-Saône",
 		"clients":[
+		{
+			"nom"    : "Cabinet PARIS",
+			"contact": "Mr Paris",
+			"ville"  : "LUXEUIL LES BAINS"
+		}
 	]},
 	{
 		"code": "90",
@@ -308,11 +435,67 @@
 		"code": "38",
 		"region" : "Isère",
 		"clients":[
+		{
+			"nom"    : "Cabinet SECARA",
+			"contact": "Mr De Jong",
+			"ville"  : "PONT DE BEAUVOISIN"
+		},
+		{
+			"nom"    : "O.C.G.A",
+			"contact": "Mr Chomiène",
+			"ville"  : "PONT DE CLAIX"
+		},
+		{
+			"nom"    : "RAVEL",
+			"contact": "Mr Alexandre Ravel",
+			"ville"  : "VIENNE"
+		},
+		{
+			"nom"    : "VEDRENNE & CHARBONNIER",
+			"contact": "Mr Vedrenne",
+			"ville"  : "VILLARD DE LANS"
+		},
+		{
+			"nom"    : "Cabinet PALIARD",
+			"contact": "Mr Paliard",
+			"ville"  : "GRENOBLE"
+		},
+		{
+			"nom"    : "Cabinet DI GIORGIO ET GINTRAND",
+			"contact": "Mr Gintrand - Mr Di Giorgio",
+			"ville"  : "GRENOBLE"
+		},
+		{
+			"nom"    : "ALP INTER ASSUR",
+			"contact": "Mr Ruggéri",
+			"ville"  : "GRENOBLE"
+		},
+		{
+			"nom"    : "CONSULT ASSUR CONSEILS",
+			"contact": "Mr Chauvelot",
+			"ville"  : "MEYLAN"
+		}
+
 	]},
 	{
 		"code": "42",
 		"region" : "Loire",
 		"clients":[
+		{
+			"nom"    : "Cabinet NOVE-SAUDET",
+			"contact": "Mr Nove - Mr Saudet",
+			"ville"  : "ROANNE"
+		},
+		{
+			"nom"    : "Cabinet DUVERGER",
+			"contact": "Mr Duverger",
+			"ville"  : "ST ETIENNE"
+		},
+		{
+			"nom"    : "Cabinet FONTALIS",
+			"contact": "Mr Thiollier",
+			"ville"  : "ST ETIENNE"
+		}
 	]},
 	{
 		"code": "69",
@@ -413,11 +596,46 @@
 		"code": "73",
 		"region" : "Savoie",
 		"clients":[
+		{
+			"nom"    : "Assurances des VALLEES",
+			"contact": "Mr Blanc",
+			"ville"  : "ALBERVILLE"
+		},
+		{
+			"nom"    : "ASC Assurances",
+			"contact": "Mr Molter",
+			"ville"  : "CHAMBERY"
+		}
 	]},
 	{
 		"code": "74",
 		"region" : "Haute-Savoie",
 		"clients":[
+		{
+			"nom"    : "KEROLLEUR-EXCOFFIER",
+			"contact": "Mr Excoffier",
+			"ville"  : "ANNECY"
+		},
+		{
+			"nom"    : "Cabinet SACA",
+			"contact": "Mr Bayeron",
+			"ville"  : "ANNEMASSE"
+		},
+		{
+			"nom"    : "Assurances en LIGNE",
+			"contact": "Mr Tripodi",
+			"ville"  : "ANNEMASSE"
+		},
+		{
+			"nom"    : "ABAX Consultants",
+			"contact": "Mr Georges Marmoux",
+			"ville"  : "ANNEMASSE"
+		},
+		{
+			"nom"    : "BURDIGALA",
+			"contact": "Mme Péreira",
+			"ville"  : "MUSIEGES"
+		}
 	]},
 	{
 		"code": "03",
@@ -438,6 +656,16 @@
 		"code": "63",
 		"region" : "Puy-de-Dôme",
 		"clients":[
+		{
+			"nom"    : "AUVERGNE COURTAGE ASSURANCES",
+			"contact": "Mr CALVET",
+			"ville"  : "CLERMONT FERRAND"
+		},
+		{
+			"nom"    : "GLOBALE ASSURANCE ET PRET",
+			"contact": "Mme ABDEJIL",
+			"ville"  : "CLERMONT FERRAND"
+		}
 	]},
 	{
 		"code": "19",
@@ -458,6 +686,11 @@
 		"code": "16",
 		"region" : "Charente",
 		"clients":[
+		{
+			"nom"    : "Cabinet POT",
+			"contact": "Mme Pot",
+			"ville"  : "VILLEFAGNAN"
+		}
 	]},
 	{
 		"code": "17",
@@ -473,6 +706,11 @@
 		"code": "86",
 		"region" : "Vienne",
 		"clients":[
+		{
+			"nom"    : "S. N. C. A.",
+			"contact": "Mr Bégat",
+			"ville"  : "COUME"
+		}
 	]},
 	{
 		"code": "24",
@@ -483,21 +721,57 @@
 		"code": "33",
 		"region" : "Gironde",
 		"clients":[
+		{
+			"nom"    : "Optimium Assurance",
+			"contact": "Mr Depinay",
+			"ville"  : "BORDEAUX"
+		},
+		{
+			"nom"    : "Cabinet SC CONSEIL",
+			"contact": "Mrs Moingeon et Mioque",
+			"ville"  : "MERIGNAC "
+		},
+		{
+			"nom"    : "Cabinet JOUFFRAU",
+			"contact": "Mr Jouffrau",
+			"ville"  : "LANTON"
+		}
+
 	]},
 	{
 		"code": "40",
 		"region" : "Landes",
 		"clients":[
+		{
+			"nom"    : "GALLIA Assurances",
+			"contact": "Mr De Valicourt",
+			"ville"  : "MONT DE MARSAN"
+		}
 	]},
 	{
 		"code": "47",
 		"region" : "Lot-et-Garonne",
 		"clients":[
+		{
+			"nom"    : "Cabinet BRIGNOLI",
+			"contact": "Mr Brignoli",
+			"ville"  : "VILLENEUVE SUR LOT"
+		}
 	]},
 	{
 		"code": "64",
 		"region" : "Pyrénées-Atlantiques",
 		"clients":[
+		{
+			"nom"    : "ASSUR FINANCE",
+			"contact": "Mr Etcheto",
+			"ville"  : "BAYONNE"
+		},
+		{
+			"nom"    : "BLD Conseil",
+			"contact": "Mr Bruyant",
+			"ville"  : "JURANCON"
+		}
 	]},
 	{
 		"code": "09",
@@ -513,56 +787,196 @@
 		"code": "31",
 		"region" : "Haute-Garonne",
 		"clients":[
+		{
+			"nom"    : "A.C.P.S Assurances",
+			"contact": "Mr Ferrafiat",
+			"ville"  : "TOULOUSE"
+		},
+		{
+			"nom"    : "AXILE",
+			"contact": "Mr Lassignardie",
+			"ville"  : "TOULOUSE"
+		},
+		{
+			"nom"    : "CG2A",
+			"contact": "Mr Gosset",
+			"ville"  : "TOULOUSE"
+		},
+		{
+			"nom"    : "Cabinet EBRARD",
+			"contact": "Mr Ebrard",
+			"ville"  : "TOULOUSE"
+		},
+		{
+			"nom"    : "MONNE DECROIX",
+			"contact": "Mr Juan",
+			"ville"  : "TOULOUSE"
+		},
+		{
+			"nom"    : "HOLIVIER GROUSSARD",
+			"contact": "Mr Groussard",
+			"ville"  : "TOULOUSE"
+		},
+		{
+			"nom"    : "LAVAL & PUECHBLANC",
+			"contact": "Mr Puechblanc",
+			"ville"  : "TOULOUSE"
+		},
+		{
+			"nom"    : "Courtage OCCITAN",
+			"contact": "Mme Ledieu",
+			"ville"  : "LABARTHE SUR LEZE - MONTBERON"
+		},
+		{
+			"nom"    : "J.P.A.C",
+			"contact": "Mr Jean-Pierre Descamps",
+			"ville"  : "LAUNAGUET"
+		},
+		{
+			"nom"    : "Cabinet C. A. R.",
+			"contact": "Mr Rogé",
+			"ville"  : "RAMONVILLE STE-AGNE"
+		}
 	]},
 	{
 		"code": "32",
 		"region" : "Gers",
 		"clients":[
+		{
+			"nom"    : "Cabinet SANTISTEVA",
+			"contact": "Mr Santistéva",
+			"ville"  : "AUCH - LECTOURE"
+		},
+		{
+			"nom"    : "LPP Conseils",
+			"contact": "Mr Pujau",
+			"ville"  : "AUCH - LECTOURE"
+		}
 	]},
 	{
 		"code": "46",
 		"region" : "Lot",
 		"clients":[
+		{
+			"nom"    : "Cabinet LALARDIE",
+			"contact": "Mr Lalardie",
+			"ville"  : "SAINT CERE"
+		}
 	]},
 	{
 		"code": "65",
 		"region" : "Hautes-Pyrénées",
 		"clients":[
+		{
+			"nom"    : "SOCAP",
+			"contact": "Mr De Valicourt",
+			"ville"  : "LOURDES"
+		}
 	]},
 	{
 		"code": "81",
 		"region" : "Tarn",
 		"clients":[
+		{
+			"nom"    : "AMA Assurances",
+			"contact": "Mr Amalric",
+			"ville"  : "CASTRES"
+		},
+		{
+			"nom"    : "GAILHOUSTE - LIGNAN - FABRE",
+			"contact": "Mr Lignan",
+			"ville"  : "CASTRES"
+		}
 	]},
 	{
 		"code": "82",
 		"region" : "Tarn-et-Garonne",
 		"clients":[
+		{
+			"nom"    : "B. C. G. S",
+			"contact": "Mr Brunet",
+			"ville"  : "MONTAUBAN"
+		}
 	]},
 	{
 		"code": "11",
 		"region" : "Aude",
 		"clients":[
+		{
+			"nom"    : "LP ASSURANCES",
+			"contact": "M. Pujau",
+			"ville"  : "NARBONNE"
+		},
+		{
+			"nom"    : "Cabinet MALE",
+			"contact": "Mr Malé",
+			"ville"  : "CASTELNAUDARY"
+		},
+		{
+			"nom"    : "Cabinet BVS",
+			"contact": "Mr Barbiéri",
+			"ville"  : "ALAIRAC"
+		}
 	]},
 	{
 		"code": "30",
 		"region" : "Gard",
 		"clients":[
+		{
+			"nom"    : "MB CONSEIL",
+			"contact": "Mr Burgarella",
+			"ville"  : "NIMES"
+		}
 	]},
 	{
 		"code": "34",
 		"region" : "Hérault",
 		"clients":[
+		{
+			"nom"    : "ASSURIDIS",
+			"contact": "Mr Doolaeghe",
+			"ville"  : "MONTPELLIER"
+		},
+		{
+			"nom"    : "Cabinet MALLET",
+			"contact": "Mr Mallet",
+			"ville"  : "MONTPELLIER"
+		},
+		{
+			"nom"    : "Société ASSINTER",
+			"contact": "Mr Moulin",
+			"ville"  : "MONTPELLIER"
+		},
+		{
+			"nom"    : "LES COURTIERS DU SUD",
+			"contact": "Mr Santistéban",
+			"ville"  : "MONTPELLIER"
+		}
 	]},
 	{
 		"code": "48",
 		"region" : "Lozère",
 		"clients":[
+		{
+			"nom"    : "A F C C",
+			"contact": "Mme Raymond",
+			"ville"  : "MENDE"
+		}
 	]},
 	{
 		"code": "66",
 		"region" : "Pyrénées-Orientales",
 		"clients":[
+		{
+			"nom"    : "A à Z Assurances",
+			"contact": "Mr Argence",
+			"ville"  : "PERPIGNAN"
+		},
+		{
+			"nom"    : "TRANSACTIF Conseil",
+			"contact": "Mr Bonnet",
+			"ville"  : "PERPIGNAN"
+		}
 	]},
 	{
 		"code": "04",
@@ -578,21 +992,96 @@
 		"code": "06",
 		"region" : "Alpes-Maritimes",
 		"clients":[
+		{
+			"nom"    : "JGM",
+			"contact": "Mrs Jourdan-Gassin-Moncel",
+			"ville"  : "NICE"
+		},
+		{
+			"nom"    : "AXENIAL",
+			"contact": "Mme Catoni",
+			"ville"  : "NICE"
+		},
+		{
+			"nom"    : "JLM Assurances",
+			"contact": "Mr Lipérini",
+			"ville"  : "CANNES"
+		},
+		{
+			"nom"    : "AVENIR CONSEIL Assurances",
+			"contact": "Mr Citron",
+			"ville"  : "CANNES"
+		},
+		{
+			"nom"    : "ASSUR’PARTENAIRES",
+			"contact": "Mr Cazeneuve",
+			"ville"  : "MOUANS SARTOUX"
+		}
 	]},
 	{
 		"code": "13",
 		"region" : "Bouches-du-Rhône",
 		"clients":[
+		{
+			"nom"    : "GRAND SUD ASSURANCES",
+			"contact": "Mr Pietri & Mr Jauffret",
+			"ville"  : "MARSEILLE"
+		},
+		{
+			"nom"    : "TRANS MAR",
+			"contact": "Mr Rocher",
+			"ville"  : "MARSEILLE"
+		},
+		{
+			"nom"    : "ELEO Assurances",
+			"contact": "Mr Leveque",
+			"ville"  : "MARSEILLE"
+		}
 	]},
 	{
 		"code": "83",
 		"region" : "Var",
 		"clients":[
+		{
+			"nom"    : "JFL Assurances",
+			"contact": "Mr Leroy",
+			"ville"  : "TOULON / SIX FOURS"
+		},
+		{
+			"nom"    : "LGM Sarl ACD",
+			"contact": "Mr Mazet",
+			"ville"  : "TOULON / SIX FOURS"
+		},
+		{
+			"nom"    : "ASSURA 92",
+			"contact": "Mme Jacomet",
+			"ville"  : "LA FARLEDE"
+		},
+		{
+			"nom"    : "DG & MB FRANCE",
+			"contact": "Mr Bégard",
+			"ville"  : "ROQUEBRUNE SUR ARGENS"
+		}
 	]},
 	{
 		"code": "84",
 		"region" : "Vaucluse",
 		"clients":[
+		{
+			"nom"    : "AS CONSEIL",
+			"contact": "Mr Elmosnino",
+			"ville"  : "AVIGNON"
+		},
+		{
+			"nom"    : "Cabinet CHALON",
+			"contact": "Mr Chalon",
+			"ville"  : "CARPENTRAS"
+		},
+		{
+			"nom"    : "GNP Assurances",
+			"contact": "Mr Pyron",
+			"ville"  : "VALREAS"
+		}
 	]},
 	{
 		"code": "2A",
