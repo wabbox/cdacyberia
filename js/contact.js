@@ -38,7 +38,7 @@ $(document).ready(function() {
 	var regexList={"regex_list":[
 	{
 		"Name":"message",
-		"regex": /^.{2,1500}$/
+		"regex": /^[\s\S]{2,1500}$/
 	},
 	{
 		"Name":"tel",
@@ -50,7 +50,7 @@ $(document).ready(function() {
 	},
 	{
 		"Name":"nom",
-		"regex": /^[a-zA-Z0-9_âäàéèùêëîïô öçñ-]{2,24}$/
+		"regex": /^[a-zA-Z0-9_ÁÀÂÄÉÈÊËÍÌÎÏÓÒÔÖÚÙÛÜáàâäéèêëíìîïóòôöúùûüÇç -]{2,24}$/
 	},
 	{
 		"Name":"cp",
